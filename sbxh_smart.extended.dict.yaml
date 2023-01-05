@@ -1,0 +1,24 @@
+# Rime dict
+# encoding: utf-8
+---
+name: sbxh_smart.extended
+version: "0.1"
+sort: original
+import_tables:
+  - sbjm              #sbxh_dz
+  - sbxh_stroke
+  - sbxh_cz
+  - fast.symbols
+  - o_symbols
+encoder:
+  exclude_patterns:
+    - '^o.*$'
+    - '^`.*$'
+  rules:
+    - length_equal: 2
+      formula: "AaAbBaBbAcBc"
+    - length_equal: 3
+      formula: "AaBaCaAcBc"
+    - length_in_range: [4, 10]
+      formula: "AaBaCaZaAcBc"
+...

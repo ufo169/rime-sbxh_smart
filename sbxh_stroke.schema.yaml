@@ -1,0 +1,112 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: sbxh_stroke
+  name: sbxh + stroke
+  version: "0.1"
+  author:
+    - 无名氏
+  description: |
+    朙月拼音＋小鹤双拼方案 + 笔画顶功。
+  dependencies:
+    - stroke
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: simplification
+    reset: 1
+    states: [ 漢字, 汉字 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - affix_segmentor@sdzc
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - table_translator
+    - table_translator@sdzc
+    - table_translator@fixed
+  filters:
+    - simplifier
+    - uniquifier
+
+speller:
+  alphabet: "bpmfdtnlgkhjqxzcsrywaoeiuv"
+  initials: "bpmfdtnlgkhjqxzcsrywaoeiuv"
+  delimiter: " '"
+
+translator:
+  dictionary: sbxh_stroke        #sbjm_smart
+  enable_user_dict: false
+  preedit_format:
+    - "xform/^/〔单〕/"
+
+fixed:
+  __include: /translator
+  enable_encoder: true
+  enable_user_dict: true
+  db_class: plain_userdb
+  encode_commit_history: false  # 开启/关闭自动造词功能：true/false。
+  # max_phrase_length: 4
+  initial_quality: -1.5
+
+sdzc:
+  __include: /translator
+  initial_quality: -1
+  # enable_encoder: true 
+  enable_sentence: true
+  # enable_user_dict: true
+  prefix: "'"
+  tips: "〔手动造词〕"
+  tag: sdzc
+
+
+reverse_lookup:
+  dictionary: stroke
+  enable_completion: true
+  prefix: "`"
+  suffix: "'"
+  tips: 〔笔画〕
+  preedit_format:
+    - xlit/hspnz/一丨丿丶乙/
+  comment_format:
+    - xform/([nl])v/$1ü/
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+  bindings:
+    - { when: has_menu, accept: comma, send: comma }
+    - { when: has_menu, accept: period, send: period }
+    - { when: has_menu, accept: bracketleft, send: Prior }
+    - { when: has_menu, accept: bracketright, send: Next }
+
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "`[a-z]*'?$"
+    sdzc: "^[a-z]*'[a-z']*$"
+  
