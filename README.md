@@ -39,10 +39,10 @@ o 引导符号输入（输入编码可以查看o_symbols.dict.yaml）
 zh	f
 sh	j
 ch	k
-a	x
+a	z
 e	d
 u	j
-i	v
+i	k
 o	l
 uo	l
 
