@@ -38,15 +38,15 @@ o 引导符号输入（输入编码可以查看o_symbols.dict.yaml）
 
 全顶功声笔，改动说明（详细查看README.md）：  
 笔画键位声韵母变动：  
-	zh		f  
-	sh		j  
-	ch		k  
-	a		z  
-	e		d  
-	u		j  
-	i		k  
-	o		l  
-	uo		l  
+	zh	  	  f  
+	sh	  	  j  
+	ch	  	  k  
+	a	  	  z  
+	e	  	  d  
+	u	  	  j  
+	i	  	  k  
+	o	  	  l  
+	uo	  	  l  
 字根：每个字的首笔是字根的，就用对应的字母代替这字根的笔顺（简单韵母音记忆，氵是 a）  
 	日			i  
 	月			e  
