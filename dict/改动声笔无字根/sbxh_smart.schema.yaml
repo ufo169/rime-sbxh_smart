@@ -1,0 +1,166 @@
+# Rime schema
+# encoding: utf-8
+schema:
+  schema_id: sbxh_smart
+  name: sbxh_smart
+  version: "1.0"
+  author:
+    - CarpeDiem
+  description:
+    sbxh_smart
+  dependencies:
+    - stroke
+    - sbxh_stroke
+    - pinyin
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: simplification
+    reset: 1
+    states: [ 漢字, 汉字 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+  - name: emoji
+    reset: 0
+    states: [ "🈚️", "🈶️" ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - lua_processor@topup_processor
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - affix_segmentor@sdzc
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+    - table_translator@second_translator
+    - reverse_lookup_translator
+    - table_translator@sdzc
+    - table_translator@zdzc
+    - history_translator@historyI
+    - table_translator@custom_phrase
+    - lua_translator@date_translator
+  filters:
+    - simplifier
+    - simplifier@emoji
+    - uniquifier
+
+speller:
+  alphabet: "bpmfdtnlgkhjqxzcsrywaoeiuv/;"
+  initials: "bpmfdtnlgkhjqxzcsrywaoeiuv/;"
+  auto_select: true
+  delimiter: " '"
+  # algebra:
+
+translator:
+  dictionary: sbxh_smart.extended
+  prism: sbxh_smart
+  enable_completion: true
+  enable_encoder: false
+  enable_sentence: false
+  enable_user_dict: false
+  encode_commit_history: false
+  initial_quality: 1000             # 降低双拼的优先级
+#  preedit_format:
+    # - "xform/^/〔双〕/"
+  disable_user_dict_for_patterns:
+    - "^o.*$"
+    - "^`.*$"
+    - "^[a-y]{1,3}$"                #三码及以下不使用自动调频、不自动造词
+
+second_translator:
+  dictionary: sbxh_stroke           #sbjm_smart
+  enable_completion: true           # 编码提示开关
+  enable_encoder: false
+  enable_sentence: false
+  encode_commit_history: false
+  enable_user_dict: false
+  db_class: plain_userdb
+  initial_quality: 1                # 单字的优先级较高
+  preedit_format:
+    # - "xform/^/〔单〕/"
+
+zdzc:
+  __include: /second_translator
+  enable_encoder: true
+  enable_user_dict: true
+  db_class: plain_userdb
+  encode_commit_history: false      # 开启/关闭自动造词功能：true/false。  
+  initial_quality: -1.5
+
+sdzc:
+  __include: /second_translator
+  enable_sentence: true
+  prefix: "'"
+  tips: "〔手动造词〕"
+  tag: sdzc
+  initial_quality: -1
+
+historyI:
+   input: i
+   size: 1 #重复前几次上屏
+   initial_quality: 0 #次选
+
+custom_phrase:
+  dictionary: ""
+  user_dict: custom_phrase
+  db_class: stabledb
+  enable_completion: false
+  enable_sentence: false
+  initial_quality: 1
+
+reverse_lookup:
+  dictionary: pinyin
+  prefix: "`"
+  tips: 〔拼音〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+
+emoji:
+  opencc_config: emoji.json
+  option_name: emoji
+  tips: all
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+  bindings:
+    - { when: has_menu, accept: comma, send: comma }
+    - { when: has_menu, accept: period, send: period }
+    - { when: has_menu, accept: bracketleft, send: Prior }
+    - { when: has_menu, accept: bracketright, send: Next }
+
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "`[a-z]*'?$"
+    sdzc: "^[a-z]*'[a-z']*$"
+#    special: "^([a-z][aeuio][bpmfdtnlgkhjqxzhrzcsywv])"
+#    input_code: "^(?:orq?|ouj?|oxq?)"
+
+topup:
+  topup_with: "aeiou" # 顶功集合码，通常为形码
+  min_length: 4  # 无顶功码自动上屏的长度
+  min_length_danzi: 2  # 单字模式无顶功码自动上屏的长度（开关：danzi_mode）
+  max_length: 6  # 全码上屏的长度
+  auto_clear: false  # 顶功空码时是否清空输入
+  topup_command: true # 为true时，首码为顶码时禁用顶功逻辑（如orq）

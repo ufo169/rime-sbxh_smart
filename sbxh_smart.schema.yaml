@@ -1,4 +1,3 @@
-# Rime schema
 # encoding: utf-8
 schema:
   schema_id: sbxh_smart
@@ -7,11 +6,11 @@ schema:
   author:
     - CarpeDiem
   description:
-    sbxh_smart
+    声笔小鹤
   dependencies:
-    - stroke
     - sbxh_stroke
     - pinyin
+    
 switches:
   - name: ascii_mode
     reset: 0
@@ -26,6 +25,9 @@ switches:
   - name: emoji
     reset: 0
     states: [ "🈚️", "🈶️" ]
+  - name: danzi_mode
+    reset: 0
+    states: [ "词组", "单字" ]
 
 engine:
   processors:
@@ -38,6 +40,7 @@ engine:
     - selector
     - navigator
     - express_editor
+    
   segmentors:
     - ascii_segmentor
     - matcher
@@ -45,6 +48,7 @@ engine:
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
+    
   translators:
     - punct_translator
     - table_translator
@@ -55,17 +59,20 @@ engine:
     - history_translator@historyI
     - table_translator@custom_phrase
     - lua_translator@date_translator
+    
   filters:
     - simplifier
     - simplifier@emoji
+#    - lua_filter@preedit_emoji
     - uniquifier
 
 speller:
-  alphabet: "bpmfdtnlgkhjqxzcsrywaoeiuv/;"
-  initials: "bpmfdtnlgkhjqxzcsrywaoeiuv/;"
-  auto_select: true
+  alphabet: "bpmfdtnlgkhjqxzcsrywaoeiuv;ZYXWVUTSRQPONMLKJIHGFEDCBA"
+  initials: "bpmfdtnlgkhjqxzcsrywaoeiuv;ZYXWVUTSRQPONMLKJIHGFEDCBA"
+  auto_select: true                      
   delimiter: " '"
-  # algebra:
+  algebra:
+#    - xform/\w/\L$0/              #英文需要                                    
 
 translator:
   dictionary: sbxh_smart.extended
@@ -75,32 +82,28 @@ translator:
   enable_sentence: false
   enable_user_dict: false
   encode_commit_history: false
-  initial_quality: 1000             # 降低双拼的优先级
-#  preedit_format:
-    # - "xform/^/〔双〕/"
+  initial_quality: 1000
   disable_user_dict_for_patterns:
     - "^o.*$"
     - "^`.*$"
-    - "^[a-y]{1,3}$"                #三码及以下不使用自动调频、不自动造词
+    - "^[a-y]{1,3}$"              #三码及以下不使用自动调频、不自动造词
 
 second_translator:
-  dictionary: sbxh_stroke           #sbjm_smart
-  enable_completion: true           # 编码提示开关
+  dictionary: sbxh_stroke
+  enable_completion: true
   enable_encoder: false
   enable_sentence: false
   encode_commit_history: false
   enable_user_dict: false
   db_class: plain_userdb
-  initial_quality: 1                # 单字的优先级较高
-  preedit_format:
-    # - "xform/^/〔单〕/"
+  initial_quality: 1
 
 zdzc:
   __include: /second_translator
   enable_encoder: true
   enable_user_dict: true
   db_class: plain_userdb
-  encode_commit_history: false      # 开启/关闭自动造词功能：true/false。  
+  encode_commit_history: false    # 开启/关闭自动造词功能：true/false。
   initial_quality: -1.5
 
 sdzc:
@@ -113,8 +116,8 @@ sdzc:
 
 historyI:
    input: i
-   size: 1 #重复前几次上屏
-   initial_quality: 0 #次选
+   size: 1                        #重复前几次上屏
+   initial_quality: 0             #次选
 
 custom_phrase:
   dictionary: ""
@@ -155,12 +158,16 @@ recognizer:
     reverse_lookup: "`[a-z]*'?$"
     sdzc: "^[a-z]*'[a-z']*$"
 #    special: "^([a-z][aeuio][bpmfdtnlgkhjqxzhrzcsywv])"
-#    input_code: "^(?:orq?|ouj?|oxq?)"
 
+#input_code:
+#    date: orq
+#    time: osj
+#    week: oxq
+           
 topup:
-  topup_with: "aeiou" # 顶功集合码，通常为形码
-  min_length: 4  # 无顶功码自动上屏的长度
-  min_length_danzi: 2  # 单字模式无顶功码自动上屏的长度（开关：danzi_mode）
-  max_length: 6  # 全码上屏的长度
-  auto_clear: false  # 顶功空码时是否清空输入
-  topup_command: true # 为true时，首码为顶码时禁用顶功逻辑（如orq）
+  topup_with: "aeiou"     # 顶功集合码，通常为形码
+  min_length: 4           # 无顶功码自动上屏的长度
+  min_length_danzi: 2     # 单字模式无顶功码自动上屏的长度（开关：danzi_mode）
+  max_length: 6           # 全码上屏的长度
+  auto_clear: false       # 顶功空码时是否清空输入
+  topup_command: true     # 为true时，首码为顶码时禁用顶功逻辑（如orq）
