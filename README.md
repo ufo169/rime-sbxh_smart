@@ -38,16 +38,16 @@ o 引导符号输入（输入编码可以查看o_symbols.dict.yaml）
 
 全顶功声笔，改动说明：  
 笔画键位声韵母变动：          字根：（简单韵母音记忆，氵是 a）  
-  zh  	  f                 日     	  i  
-  sh  	  j                 月     	  e  
-  ch  	  k                 人（亻）	  e  
-  a   	  z                 口     	  o  
-  e   	  d                 手（扌) 	  o  
-  u   	  j                 金（钅）	  i  
-  i   	  k                 木     	  u  
-  o   	  l                 水（氵）	  a  
-  uo  	  l                 土     	  u  
-                            草（艹）	  a  
+	zh		f					日			i  
+	sh		j					月			e  
+	ch		k					人（亻）		e  
+	a		z					口			o  
+	e		d					手（扌)		o  
+	u		j					金（钅）		i  
+	i		k					木			u  
+	o		l					水（氵）		a  
+	uo		l					土			u  
+								草（艹）		a  
 
 *特别说明，需要恢复传统声笔，主方案sbxh_smart打开顶功规则，还需要替换以下三个原来未改动的词典  
   - sbjm  
