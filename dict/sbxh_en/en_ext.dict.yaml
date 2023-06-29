@@ -1,0 +1,2145 @@
+# Rime dictionary
+# encoding: utf-8
+# --- 补充的英文词汇 ---
+---
+name: en_ext
+version: "1.0"
+sort: by_weight
+...
+
+# 一些杂项		
+ .DS_Store	Dsstore	
+ README.md	Readmemd	
+# 按键		
+ Fn	Fn	
+ Cmd	Cmd	
+ Command	Command	
+ Ctrl	Ctrl	
+ Control	Control	
+ Opt	Opt	
+ Option	Option	
+ Shift	Shift	
+ Tab	Tab	
+ Caps	Caps	
+ CapsLock	Capslock	
+ Return	Return	
+ Enter	Enter	
+ Space	Space	
+ Backspace	Backspace	
+ Del	Del	
+ Delete	Delete	
+ Esc	Esc	
+ Eject	Eject	
+# 月份		
+ January	January	
+ Jan.	Jan	
+ January	Jan	
+ February	February	
+ Feb.	Feb	
+ February	Feb	
+ March	March	
+ Mar.	Mar	
+ March	Mar	
+ April	April	
+ Apr.	Apr	
+ April	Apr	
+ May	May	
+ June	June	
+ June	Jun	
+ July	July	
+ August	August	
+ Aug.	Aug	
+ August	Aug	
+ September	September	
+ Sep.	Sep	
+ Sept.	Sep	
+ Sept.	Sept	
+ September	Sep	
+ September	Sept	
+ October	October	
+ Oct.	Oct	
+ October	Oct	
+ November	November	
+ Nov.	Nov	
+ November	Nov	
+ December	December	
+ Dec.	Dec	
+ December	Dec	
+# 星期		
+ Monday	Monday	
+ Mon.	Mon	
+ Monday	Mon	
+ Tuesday	Tuesday	
+ Tue.	Tue	
+ Tuesday	Tue	
+ Wednesday	Wednesday	
+ Wed.	Wed	
+ Wednesday	Wed	
+ Thursday	Thursday	
+ Thu.	Thu	
+ Thurs.	Thu	
+ Thurs.	Thurs	
+ Thursday	Thu	
+ Thursday	Thurs	
+ Friday	Friday	
+ Fri.	Fri	
+ Friday	Fri	
+ Saturday	Saturday	
+ Sat.	Sat	
+ Saturday	Sat	
+ Sunday	Sunday	
+ Sun.	Sun	
+ Sunday	Sun	
+# 带权重的系列		
+ iPhone	Iphone	999
+ Mac OS X	Macosx	999
+ Mac OS X Cheetah	Macosx	1
+ Mac OS X Puma	Macosx	2
+ Mac OS X Jaguar	Macosx	3
+ Mac OS X Panther	Macosx	4
+ Mac OS X Tiger	Macosx	5
+ Mac OS X Leopard	Macosx	6
+ Mac OS X Snow Leopard	Macosx	7
+ Cheetah	Cheetah	
+ Puma	Puma	
+ Jaguar	Jaguar	
+ Panther	Panther	
+ Tiger	Tiger	
+ Leopard	Leopard	
+ Snow Leopard	Snowleopard	
+ OS X	Osx	999
+ OS X Lion	Osx	1
+ OS X Mountain Lion	Osx	2
+ OS X Mavericks	Osx	3
+ OS X Yosemite	Osx	4
+ OS X El Capitan	Osx	5
+ Lion	Lion	
+ Mountain Lion	Mountainlion	
+ Mavericks	Mavericks	
+ Yosemite	Yosemite	
+ El Capitan	Elcapitan	
+ macOS	Macos	999
+ macOS Sierra	Macos	1
+ macOS High Sierra	Macos	2
+ macOS Mojave	Macos	3
+ macOS Catalina	Macos	4
+ macOS Big Sur	Macos	5
+ macOS Monterey	Macos	6
+ macOS Ventura	Macos	7
+ macOS Sonoma	Macos	8
+ macOS Sierra	Macossierra	
+ macOS High Sierra	Macoshighsierra	
+ macOS Mojave	Macosmojave	
+ macOS Catalina	Macoscatalina	
+ macOS Big Sur	Macosbigsur	
+ macOS Monterey	Macosmonterey	
+ macOS Ventura	Macosventura	
+ macOS Sonoma	Macossonoma	
+ Sierra	Sierra	
+ High Sierra	Highsierra	
+ Mojave	Mojave	
+ Catalina	Catalina	
+ Big Sur	Bigsur	
+ Monterey	Monterey	
+ Ventura	Ventura	
+ Sonoma	Sonoma	
+ Windows	Windows	999
+ Windows XP	Windows	5
+ Windows XP	Windowsxp	
+ Windows Vista	Windows	6
+ Windows 7	Windows	7
+ Windows 10	Windows	10
+ Windows 11	Windows	11
+		
+ ERC-20	Erc	
+ ERC-721	Erc	
+ ERC-1155	Erc	
+ iPhone SE	Iphonese	
+ iPhone 12	Iphone	
+ iPhone 12 Mini	Iphonemini	
+ iPhone 12 Pro	Iphonepro	
+ iPhone 12 Pro Max	Iphonepromax	
+ Windows Me	Windowsme	
+ Windows Vista	Windowsvista	
+ TypeORM	Typeorm	
+ Griffiths	Griffiths	
+ Chapman	Chapman	
+ Walsh	Walsh	
+ Matthews	Matthews	
+ Patel	Patel	
+ Willie	Willie	
+ ChillSeph	Chillseph	
+ Ernest	Ernest	
+ Phillip	Phillip	
+ Teresa	Teresa	
+ Doris	Doris	
+ Evelyn	Evelyn	
+ Cheryl	Cheryl	
+ Mildred	Mildred	
+ Katherine	Katherine	
+ Judith	Judith	
+ Janice	Janice	
+ Theresa	Theresa	
+ Kimberly	Kimberly	
+ Denise	Denise	
+ Irene	Irene	
+ Shirley	Shirley	
+ Cynthia	Cynthia	
+ Brenda	Brenda	
+ Kathleen	Kathleen	
+ Jacqueline	Jacqueline	
+ Wanda	Wanda	
+ Debra	Debra	
+ Lois	Lois	
+ Carolyn	Carolyn	
+ Tina	Tina	
+ Phyllis	Phyllis	
+ Norma	Norma	
+ Paula	Paula	
+ Frances	Frances	
+ Lillian	Lillian	
+ Olivia	Olivia	
+ Ava	Ava	
+ Isabella	Isabella	
+ Sherlock	Sherlock	
+ Amelia	Amelia	
+ Sophia	Sophia	
+ Abigail	Abigail	
+ Liam	Liam	
+ Noah	Noah	
+ Jay	Jay	
+ Enya	Enya	
+ Juno	Juno	
+ Trump	Trump	
+ Biden	Biden	
+ Joseph	Joseph	
+ Braun	Braun	
+ Bayes	Bayes	
+ Saul	Saul	
+ Wick	Wick	
+ RPG	Rpg	
+ Role-Playing Game	Rpg	
+ Role-Playing Game	Roleplayinggame	
+ ADC	Adc	
+ Attack Damage Carry	Adc	
+ Attack Damage Carry	Attackdamagecarry	
+ APC	Apc	
+ Ability Power Carry	Apc	
+ Ability Power Carry	Abilitypowercarry	
+ GDP	Gdp	
+ Gross Domestic Product	Gdp	
+ Gross Domestic Product	Grossdomesticproduct	
+ LOL	Lol	
+ League of Legends	Lol	
+ League of Legends	Leagueoflegends	
+ Laugh Out Loudly	Lol	
+ Laugh Out Loudly	Laughoutloudly	
+ SQL Server	Sqlserver	
+ Microsoft SQL Server	Sqlserver	
+ Microsoft SQL Server	Microsoftsqlserver	
+ SSH	Ssh	
+ Secure Shell	Ssh	
+ Secure Shell	Secureshell	
+ ISO	Iso	
+ International Organization for Standardization	Iso	
+ ISO 8601	Iso	
+ RFC	Rfc	
+ Request for Comments	Rfc	
+ RFC 3339	Rfc	
+ RFCs	Rfcs	
+ IETF	Ietf	
+ Internet Engineering Task Force	Ietf	
+ Pro Max	Promax	
+ Aeron	Aeron	
+ Aeron Chair	Aeronchair	
+ Netscape	Netscape	
+ WeChat	Wechat	
+ Dota	Dota	
+ Database	Database	
+ Macintosh	Macintosh	
+ Superlist	Superlist	
+ DJ	Dj	
+ DLC	Dlc	
+ Downloadable content	Dlc	
+ Downloadable content	Downloadablecontent	
+ Quora	Quora	
+ LinkedIn	Linkedin	
+ COO	Coo	
+ Chief Operating Officer	Coo	
+ Chief Operating Officer	Chiefoperatingofficer	
+ iShot	Ishot	
+ TapTap	Taptap	
+ HHD	Hhd	
+ Hybrid drive	Hhd	
+ Hybrid drive	Hybriddrive	
+ SSD	Ssd	
+ Solid-state drive	Ssd	
+ Solid-state drive	Solidstatedrive	
+ CPU	Cpu	
+ Central Processing Unit	Cpu	
+ Central Processing Unit	Centralprocessingunit	
+ GPU	Gpu	
+ Graphics Processing Unit	Gpu	
+ Graphics Processing Unit	Graphicsprocessingunit	
+ MCU	Mcu	
+ ARM	Arm	
+ Advanced RISC Machine	Arm	
+ Advanced RISC Machine	Advancedriscmachine	
+ eGPU	Egpu	
+ One Piece	Onepiece	
+ CCTV	Cctv	
+ Closed-Circuit Television	Cctv	
+ Closed-Circuit Television	Closedcircuittelevision	
+ China Central Television	Cctv	
+ ColorOS	Coloros	
+ China Central Television	Chinacentraltelevision	
+ GTA	Gta	
+ Grand Theft Auto	Gta	
+ Grand Theft Auto	Grandtheftauto	
+ GTAV	Gtav	
+ Grand Theft Auto V	Gtav	
+ Grand Theft Auto V	Grandtheftautov	
+ LGBT	Lgbt	
+ GPS	Gps	
+ ATM	Atm	
+ automated teller machine	Atm	
+ automated teller machine	Automatedtellermachine	
+ CentOS	Centos	
+ Debian	Debian	
+ BBC	Bbc	
+ DataGrip	Datagrip	
+ AlphaGo	Alphago	
+ AlphaFold	Alphafold	
+ Valve	Valve	
+ CS:GO	Csgo	
+ Counter-Strike: Global Offensive	Csgo	
+ Counter-Strike	Counterstrike	
+ Tesla	Tesla	
+ Polo	Polo	
+ Code Runner	Coderunner	
+ AfterShokz Aeropex	Aftershokzaeropex	
+ AfterShokz	Aftershokz	
+ Aeropex	Aeropex	
+ Xnip	Xnip	
+ Workspace	Workspace	
+ Google Chrome	Googlechrome	
+ Google Workspace	Googleworkspace	
+ WYSIWYG	Wysiwyg	
+ What You See Is What You Get	Wysiwyg	
+ Mark Text	Marktext	
+ Joplin	Joplin	
+ Obsidian	Obsidian	
+ SteamOS	Steamos	
+ TikTok	Tiktok	
+ IDC	Idc	
+ International Data Corporation	Idc	
+ International Data Corporation	Internationaldatacorporation	
+ Wunderlist	Wunderlist	
+ VMware	Vmware	
+ Fusion	Fusion	
+ Flyme	Flyme	
+ VMware Fusion	Vmwarefusion	
+ VMware Fusion Player	Vmwarefusionplayer	
+ VMware Fusion Pro	Vmwarefusionpro	
+ Vanilla	Vanilla	
+ Ubisoft	Ubisoft	
+ Twitch	Twitch	
+ Todoist	Todoist	
+ TeamViewer	Teamviewer	
+ Sleep Cycle	Sleepcycle	
+ Sony	Sony	
+ PDF Expert	Pdfexpert	
+ OSCHINA	Oschina	
+ Navicat	Navicat	
+ Navicat Premium	Navicatpremium	
+ NameSilo	Namesilo	
+ localhost	Localhost	
+ Musixmatch	Musixmatch	
+ G Suite	Gsuite	
+ CloudXNS	Cloudxns	
+ Bitwarden	Bitwarden	
+ BitComet	Bitcomet	
+ Bitbucket	Bitbucket	
+ Google Photos	Googlephotos	
+ Google Calendar	Googlecalendar	
+ LyricsX	Lyricsx	
+ OneDrive	Onedrive	
+ Xbox	Xbox	
+ Xbox One	Xboxone	
+ Xbox One X	Xboxonex	
+ Xbox Series	Xboxseries	
+ Xbox Series S	Xboxseriess	
+ Switch	Switch	
+ CSS	Css	
+ Cascading Style Sheets	Css	
+ Cascading Style Sheets	Cascadingstylesheets	
+ cascading	Cascading	
+ OTC	Otc	
+ IEPL	Iepl	
+ International Ethernet Private Line	Iepl	
+ IPLC	Iplc	
+ International Private Leased Circuit	Iplc	
+ IntelliJ	Intellij	
+ IntelliJ IDEA	Intellijidea	
+ IntelliJ IDEA Community	Intellijideacommunity	
+ IntelliJ IDEA Ultimate	Intellijideaultimate	
+ IDEA	Idea	
+ IDEA Community	Ideacommunity	
+ IDEA Ultimate	Ideaultimate	
+ IDE	Ide	
+ NTR	Ntr	
+ Notion	Notion	
+ Touch Bar	Touchbar	
+ DOM	Dom	
+ VIP	Vip	
+ D.VA	Dva	
+ Logo	Logo	
+ Telnet	Telnet	
+ IPv4	Ipv	
+ IPv6	Ipv	
+ Unix	Unix	
+ Rick and Morty	Rickandmorty	
+ Tokyo	Tokyo	
+ uTools	Utool	
+ uTools	Utools	
+ AirPods	Airpods	
+ AirPods Pro	Airpodspro	
+ AirPods Max	Airpods	
+ AirPods Max	Airpodsmax	
+ CallKit	Callkit	
+ OSS	Oss	
+ Object Storage Service	Oss	
+ Object Storage Service	Objectstorageservice	
+ OceanBase	Oceanbase	
+ YouTube Music	Youtubemusic	
+ Apple Music	Applemusic	
+ TED	Ted	
+ DeepL	Deepl	
+ Homebrew	Homebrew	
+ brew	Brew	
+ Finder	Finder	
+ VMess	Vmess	
+ Shadowsocks	Shadowsocks	
+ PC	Pc	
+ iStat	Istat	
+ ClashX	Clashx	
+ ClashX Pro	Clashxpro	
+ tracker	Tracker	
+ trackers	Trackers	
+ qBittorrent	Qbittorrent	
+ qBittorrent	Qbit	
+ qBittorrent Enhanced Edition	Qee	
+ qBittorrent Enhanced Edition	Qbee	
+ qBittorrent Enhanced Edition	Qbitee	
+ qBittorrent Enhanced Edition	Qbittorrentee	
+ qBittorrent Enhanced Edition	Qbittorrentenhancededition	
+ YAML	Yaml	
+ YAML Ain't Markup Language	Yaml	
+ TOML	Toml	
+ Tom's Obvious Minimal Language	Toml	
+ Hexo	Hexo	
+ Hugo	Hugo	
+ Epic	Epic	
+ Epic Games	Epicgames	
+ Instagram	Instagram	
+ archive	Archive	
+ Evernote	Evernote	
+ PDF	Pdf	
+ Portable Document Format	Pdf	
+ Portable Document Format	Portabledocumentformat	
+ QuickTime Player	Quicktimeplayer	
+ CSDN	Csdn	
+ Gitee	Gitee	
+ Gitea	Gitea	
+ GitBook	Gitbook	
+ Gboard	Gboard	
+ Access	Access	
+ BMW	Bmw	
+ Bayerische Motoren Werke AG	Bmw	
+ BGM	Bgm	
+ Background music	Bgm	
+ Background music	Backgroundmusic	
+ CEO	Ceo	
+ Chief Executive Officer	Ceo	
+ Chief Executive Officer	Chiefexecutiveofficer	
+ CTO	Cto	
+ Chief Technology Officer	Cto	
+ Chief Technology Officer	Chieftechnologyofficer	
+ Coding	Coding	
+ Django	Django	
+ DBMesh	Dbmesh	
+ Excel	Excel	
+ Flask	Flask	
+ Facebook	Facebook	
+ Firefox	Firefox	
+ Git	Git	
+ GoLand	Goland	
+ Golang	Golang	
+ IQOS	Iqos	
+ Intel	Intel	
+ JSON	Json	
+ Java	Java	
+ JavaScript	Javascript	
+ JetBrains	Jetbrains	
+ KTV	Ktv	
+ MBP	Mbp	
+ MacBook Pro	Mbp	
+ MBA	Mba	
+ MacBook Air	Mba	
+ MariaDB	Mariadb	
+ Markdown	Markdown	
+ Microsoft Access	Access	
+ MongoDB	Mongodb	
+ MySQL	Mysql	
+ Node.js	Nodejs	
+ Pornhub	Pornhub	
+ PostgreSQL	Postgresql	
+ Postgres	Postgres	
+ PowerPoint	Powerpoint	
+ PPT	Ppt	
+ PowerPoint	Ppt	
+ Microsoft PowerPoint	Ppt	
+ PyCharm	Pycharm	
+ Roguelike	Roguelike	
+ Redis	Redis	
+ Rime	Rime	
+ RION	Rion	
+ SegmentFault	Segmentfault	
+ SPA	Spa	
+ SQL	Sql	
+ Structured Query Language	Sql	
+ Structured Query Language	Structuredquerylanguage	
+ SQLite	Sqlite	
+ Sourcetree	Sourcetree	
+ Spiritfarer	Spiritfarer	
+ TCP/IP	Tcpip	
+ Twitter	Twitter	
+ V2EX	Vex	
+ VSCode	Vscode	
+ Vue	Vue	
+ Vue.js	Vuejs	
+ Web	Web	
+ WebStorm	Webstorm	
+ Word	Word	
+ Xcode	Xcode	
+ emoji	Emoji	
+ exe	Exe	
+ gakki	Gakki	
+ hey	Hey	
+ iMazing	Imazing	
+ jQuery	Jquery	
+ JPG	Jpg	
+ Joint Photographic Experts Group	Jpg	
+ JPEG	Jpeg	
+ Joint Photographic Experts Group	Jpeg	
+ PNG	Png	
+ Portable Network Graphics	Png	
+ GIF	Gif	
+ Graphics Interchange Format	Gif	
+ DNS	Dns	
+ Domain Name System	Dns	
+ Domain Name System	Domainnamesystem	
+ RimWorld	Rimworld	
+ Factorio	Factorio	
+ Game Boy	Gameboy	
+ GBA	Gba	
+ Game Boy Advance	Gba	
+ Game Boy Advance	Gameboyadvance	
+ GBC	Gbc	
+ Game Boy Color	Gbc	
+ Game Boy Color	Gameboycolor	
+ GCC	Gcc	
+ GNU Compiler Collection	Gcc	
+ GNU Compiler Collection	Gnucompilercollection	
+ uBlacklist	Ublacklist	
+ Apple	Apple	
+ Apple Watch	Applewatch	
+ AppleCare	Applecare	
+ AppleCare+	Applecare	
+ Apple Card	Applecard	
+ Apple Books	Applebooks	
+ ATI	Ati	
+ Apple Store	Applestore	
+ Apple TV	Appletv	
+ Apple TV+	Appletv	
+ Apple Developer	Appledeveloper	
+ Apple File System	Applefilesystem	
+ Apple ID	Appleid	
+ Apple News	Applenews	
+ Apple Pay	Applepay	
+ iTunes Store	Itunesstore	
+ AMD	Amd	
+ Amphetamine	Amphetamine	
+ App Store	Appstore	
+ AirDrop	Airdrop	
+ Alfred	Alfred	
+ Amazon	Amazon	
+ Adobe	Adobe	
+ Atom	Atom	
+ Axure	Axure	
+ Bartender	Bartender	
+ Better Snap Tool	Bettersnaptool	
+ Better Touch Tool	Bettertouchtool	
+ Better Zip	Betterzip	
+ Brackets	Brackets	
+ BundleHunt	Bundlehunt	
+ Byword	Byword	
+ Btitish	Btitish	
+ Caffeine	Caffeine	
+ Calcbot	Calcbot	
+ Calibre	Calibre	
+ CarPlay	Carplay	
+ CDN	Cdn	
+ Content Delivery Network	Cdn	
+ Content Delivery Network	Contentdeliverynetwork	
+ CheatSheet	Cheatsheet	
+ Chocolatey	Chocolatey	
+ choco	Choco	
+ ChemBioDraw	Chembiodraw	
+ Clean My Mac	Cleanmymac	
+ Clean My Mac X	Cleanmymacx	
+ CloudApp	Cloudapp	
+ CloudMagic	Cloudmagic	
+ CodeBox	Codebox	
+ CodeKit	Codekit	
+ Color Schemer	Colorschemer	
+ Color Snapper	Colorsnapper	
+ Control Center	Controlcenter	
+ Cornerstone	Cornerstone	
+ Cortana	Cortana	
+ Curio	Curio	
+ Current Mac Bundles	Currentmacbundles	
+ Daisy Disk	Daisydisk	
+ Dash	Dash	
+ Datagraph	Datagraph	
+ Day One	Dayone	
+ Default Folder X	Defaultfolderx	
+ Desktop	Desktop	
+ Developer Preview	Developerpreview	
+ DEVONthink	Devonthink	
+ Disk Utility	Diskutility	
+ Diumoo	Diumoo	
+ Dropbox	Dropbox	
+ Dropzone	Dropzone	
+ Endnote	Endnote	
+ Entropy	Entropy	
+ ePub	Epub	
+ Eureka	Eureka	
+ ExFAT	Exfat	
+ Extended File Allocation Table	Exfat	
+ Extended File Allocation Table	Extendedfileallocationtable	
+ Fantastical	Fantastical	
+ FileVault	Filevault	
+ Final Cut Pro	Finalcutpro	
+ Flickr	Flickr	
+ Force Touch	Forcetouch	
+ Forecast	Forecast	
+ ForkLift	Forklift	
+ Frank DeLoupe	Frankdeloupe	
+ Geekbench	Geekbench	
+ Gestimer	Gestimer	
+ GhostNote	Ghostnote	
+ GhostTile	Ghosttile	
+ Gif Brewery	Gifbrewery	
+ gists	Gists	
+ GitHub	Github	
+ GoagentX	Goagentx	
+ Google Play	Googleplay	
+ Google Play Music	Googleplaymusic	
+ Graffle	Graffle	
+ Handoff	Handoff	
+ Hazel	Hazel	
+ Home	Home	
+ HomeKit	Homekit	
+ HTML	Html	
+ HyperText Markup Language	Html	
+ HyperText Markup Language	Hypertextmarkuplanguage	
+ iA Writer	Iawriter	
+ IBM	Ibm	
+ International Business Machines	Ibm	
+ International Business Machines	Internationalbusinessmachines	
+ iCloud	Icloud	
+ iCloud Mail	Icloudmail	
+ iCloud Drive	Iclouddrive	
+ iExplorer	Iexplorer	
+ iFFmpeg	Iffmpeg	
+ IFTTT	Ifttt	
+ iMac	Imac	
+ iMessage	Imessage	
+ iMore	Imore	
+ Inboard	Inboard	
+ Instacast	Instacast	
+ Instashare	Instashare	
+ Intensify	Intensify	
+ IP	Ip	
+ iPack	Ipack	
+ iPad Air	Ipadair	
+ iPad mini	Ipadmini	
+ iPad Pro	Ipadpro	
+ IPN	Ipn	
+ IPTV	Iptv	
+ iStat Menus	Istatmenus	
+ iTerm	Iterm	
+ iTunes	Itunes	
+ iTunes Connect	Itunesconnect	
+ iTunes Match	Itunesmatch	
+ iWatch	Iwatch	
+ Kaleidoscope	Kaleidoscope	
+ Karabiner	Karabiner	
+ Keka	Keka	
+ Keyboard Maestro	Keyboardmaestro	
+ Keycard	Keycard	
+ KeyCue	Keycue	
+ LaTeXian	Latexian	
+ Launcher	Launcher	
+ Little Snitch	Littlesnitch	
+ Live Photos	Livephotos	
+ LiveReload	Livereload	
+ LockScreen	Lockscreen	
+ Mac App Store	Macappstore	
+ Mac Rumors	Macrumors	
+ MacAppDeals	Macappdeals	
+ MacBook	Macbook	
+ MacBook Air	Macbookair	
+ MacBook Pro	Macbookpro	
+ Mac Pro	Macpro	
+ MacID	Macid	
+ MacTips	Mactips	
+ MacUpdate Desktop	Macupdatedesktop	
+ Mailbox	Mailbox	
+ MAMP PRO	Mamppro	
+ Manico	Manico	
+ Maple	Maple	
+ MarkMyWords	Markmywords	
+ MarsEdit	Marsedit	
+ Mathtype	Mathtype	
+ MIPS	Mips	
+ Moke	Moke	
+ Moneywiz	Moneywiz	
+ Moom	Moom	
+ MP3	Mp	
+ MP4	Mp	
+ MplayerX	Mplayerx	
+ Netflix	Netflix	
+ Noizio	Noizio	
+ Numbers	Numbers	
+ nvALT	Nvalt	
+ Office	Office	
+ OmmWriter	Ommwriter	
+ OmniFocus	Omnifocus	
+ OmniGraffle	Omnigraffle	
+ OmniOutliner	Omnioutliner	
+ OmniPlan	Omniplan	
+ OneNote	Onenote	
+ OS	Os	
+ Operating System	Os	
+ Operating System	Operatingsystem	
+ Overcast	Overcast	
+ Overflow	Overflow	
+ Pages	Pages	
+ PaintCode	Paintcode	
+ Parallels Desktop	Parallelsdesktop	
+ Password	Password	
+ Paste	Paste	
+ Paw	Paw	
+ PayPal	Paypal	
+ PhotoDesk	Photodesk	
+ Picatext	Picatext	
+ PingWest	Pingwest	
+ Pixelmator	Pixelmator	
+ Play by Play	Playbyplay	
+ PlistEdit	Pliplistedit	
+ PopClip	Popclip	
+ PowerPack	Powerpack	
+ Privoxy	Privoxy	
+ Pro	Pro	
+ Promotee	Promotee	
+ Proxifier	Proxifier	
+ Public Beta	Publicbeta	
+ Quitter	Quitter	
+ Quiver	Quiver	
+ Rdio	Rdio	
+ Readability	Readability	
+ Readkit	Readkit	
+ Regulex	Regulex	
+ Remote	Remote	
+ RescueTime	Rescuetime	
+ Retina	Retina	
+ Safari	Safari	
+ Safari View Controller	Safariviewcontroller	
+ SaneDesk	Sanedesk	
+ Scrapbook	Scrapbook	
+ ScreenFloat	Screenfloat	
+ ScreenFlow	Screenflow	
+ scribble	Scribble	
+ Scrivener	Scrivener	
+ SDK	Sdk	
+ Software Development Kit	Sdk	
+ Software Development Kit	Softwaredevelopmentkit	
+ Should I Sleep	Shouldisleep	
+ Simplenote	Simplenote	
+ Siri	Siri	
+ Sketch	Sketch	
+ Slicy	Slicy	
+ Snagit	Snagit	
+ Snip	Snip	
+ Sparkbox	Sparkbox	
+ Sparrow	Sparrow	
+ Speedtest	Speedtest	
+ Spotify	Spotify	
+ Spotlight	Spotlight	
+ Squirrel	Squirrel	
+ SSL	Ssl	
+ Edge	Edge	
+ StackSocial	Stacksocial	
+ Sublime Text	Sublimetext	
+ Surge	Surge	
+ Symbol	Symbol	
+ TechWeb	Techweb	
+ Telegram	Telegram	
+ Terminal	Terminal	
+ TestFlight	Testflight	
+ Texshop	Texshop	
+ Textastic	Textastic	
+ TextExpander	Textexpander	
+ TextWrangler	Textwrangler	
+ The Unarchiver	Theunarchiver	
+ Thunderbird	Thunderbird	
+ Time Capsule	Timecapsule	
+ Timing	Timing	
+ TinkerTool	Tinkertool	
+ Touch ID	Touchid	
+ Trello	Trello	
+ Tumblr	Tumblr	
+ tvOS	Tvos	
+ Tweetbot	Tweetbot	
+ tweet	Tweet	
+ Typora	Typora	
+ Uber	Uber	
+ uBlock	Ublock	
+ uBlock Origin	Ublockorigin	
+ Ulysses	Ulysses	
+ USB	Usb	
+ Universal Serial Bus	Usb	
+ Universal Serial Bus	Universalserialbus	
+ Versions	Versions	
+ VPN	Vpn	
+ virtual private network	Vpn	
+ watchOS	Watchos	
+ Wi-Fi	Wifi	
+ WiFi	Wifi	
+ Widget	Widget	
+ WiFi Explorer	Wifiexplorer	
+ WiFi Scanner	Wifiscanner	
+ Window Tidy	Windowtidy	
+ Windows RT	Windowsrt	
+ Windows NT	Windowsnt	
+ Windows Server	Windowsserver	
+ Windows Mobile	Windowsmobile	
+ Windows Phone	Windowsphone	
+ Workflow	Workflow	
+ WorkFlowy	Workflowy	
+ WWDC	Wwdc	
+ Apple Worldwide Developers Conference	Wwdc	
+ Xee	Xee	
+ Xeon	Xeon	
+ Xmind	Xmind	
+ xScope	Xscope	
+ XtraFinder	Xtrafinder	
+ YouTube	Youtube	
+ YouTuber	Youtuber	
+ ZEALER	Zealer	
+ Rosetta	Rosetta	
+ Face ID	Faceid	
+ URL	Url	
+ Uniform Resource Locator	Url	
+ URI	Uri	
+ Uniform Resource Identifier	Uri	
+ HTTP	Http	
+ Hypertext Transfer Protocol	Http	
+ Hypertext Transfer Protocol	Hypertexttransferprotocol	
+ HTTPS	Https	
+ Hypertext Transfer Protocol Secure	Https	
+ Hypertext Transfer Protocol Secure	Hypertexttransferprotocolsecure	
+ WSGI	Wsgi	
+ BTC	Btc	
+ Bitcoin	Btc	
+ Bitcoin	Bitcoin	
+ template	Template	
+ IMDb	Imdb	
+ gank	Gank	
+ buff	Buff	
+ debuff	Debuff	
+ MagSafe	Magsafe	
+ Magic UI	Magicui	
+ HDMI	Hdmi	
+ High Definition Multimedia Interface	Hdmi	
+ High Definition Multimedia Interface	Highdefinitionmultimediainterface	
+ NSFW	Nsfw	
+ Not Safe For Work	Nsfw	
+ Not Suitable For Work	Nsfw	
+ Not Safe For Work	Notsafeforwork	
+ Not Suitable For Work	Notsuitableforwork	
+ Termius	Termius	
+ Jinja	Jinja	
+ capitalize	Capitalize	
+ NetSetMan	Netsetman	
+ Cinity	Cinity	
+ UTC	Utc	
+ Coordinated Universal Time	Utc	
+ Coordinated Universal Time	Coordinateduniversaltime	
+ GMT	Gmt	
+ Greenwich Mean Time	Gmt	
+ Greenwich Mean Time	Greenwichmeantime	
+ GoDaddy	Godaddy	
+ Portal	Portal	
+ Eason	Eason	
+ alchemy	Alchemy	
+ SQLAlchemy	Sqlalchemy	
+ Admin	Admin	
+ Administrator	Administrator	
+ ASMR	Asmr	
+ Autonomous sensory meridian response	Asmr	
+ Autonomous sensory meridian response	Autonomoussensorymeridianresponse	
+ autonomous	Autonomous	
+ sensory	Sensory	
+ meridian	Meridian	
+ iKlear	Iklear	
+ Legal High	Legalhigh	
+ Werkzeug	Werkzeug	
+ itsdangerours	Itsdangerours	
+ Unicode	Unicode	
+ Mimestream	Mimestream	
+ CRUD	Crud	
+ Create Read Update Delete	Crud	
+ RESTful	Restful	
+ CLion	Clion	
+ Unix-like	Unixlike	
+ Metal	Metal	
+ Alembic	Alembic	
+ imgur	Imgur	
+ Stack Overflow	Stackoverflow	
+ PyWebIO	Pywebio	
+ Launchpad	Launchpad	
+ Squoosh	Squoosh	
+ cosplay	Cosplay	
+ Gravatar	Gravatar	
+ copilot	Copilot	
+ Xshell	Xshell	
+ Nokia	Nokia	
+ OCR	Ocr	
+ Optical Character Recognition	Ocr	
+ Optical Character Recognition	Opticalcharacterrecognition	
+ Déjà vu	Dejavu	
+ FFmpeg	Ffmpeg	
+ Pokemon	Pokemon	
+ DMCA	Dmca	
+ Digital Millennium Copyright Act	Dmca	
+ Digital Millennium Copyright Act	Digitalmillenniumcopyrightact	
+ PUA	Pua	
+ Pickup Artists	Pua	
+ Pickup Artists	Pickupartists	
+ Docker	Docker	
+ Darcula	Darcula	
+ Google Analytics	Googleanalytics	
+ Cloudflare Pages	Cloudflarepages	
+ GitHub Pages	Githubpages	
+ Coding Pages	Codingpages	
+ Gitee Pages	Giteepages	
+ CNAME	Cname	
+ macOS Server	Macosserver	
+ Darwin	Darwin	
+ NAS	Nas	
+ Network Attached Storage	Nas	
+ Network Attached Storage	Networkattachedstorage	
+ CommonMark	Commonmark	
+ Goldmark	Goldmark	
+ blackFriday	Blackfriday	
+ One UI	Oneui	
+ Raycast	Raycast	
+ CloudFront	Cloudfront	
+ RSS	Rss	
+ RDF Site Summary	Rss	
+ Really Simple Syndication	Rss	
+ gosh	Gosh	
+ CocoaPods	Cocoapods	
+ Zsh	Zsh	
+ Oh My Zsh	Ohmyzsh	
+ deploy	Deploy	
+ ProxyChains	Proxychains	
+ AdSense	Adsense	
+ Google AdSense	Googleadsense	
+ Disqus	Disqus	
+ Waline	Waline	
+ Valine	Valine	
+ LeanCloud	Leancloud	
+ PaperMod	Papermod	
+ Vercel	Vercel	
+ chore	Chore	
+ chores	Chores	
+ swag	Swag	
+ CS	Cs	
+ Counter-Strike	Cs	
+ Backblaze	Backblaze	
+ WebP	Webp	
+ WebM	Webm	
+ CleanShot X	Cleanshotx	
+ Setapp	Setapp	
+ GraphQL	Graphql	
+ TOTP	Totp	
+ Time-based One-Time Password	Totp	
+ Unclutter	Unclutter	
+ sitemap	Sitemap	
+ DuckDuckGo	Duckduckgo	
+ Yandex	Yandex	
+ Geralt	Geralt	
+ ServerCat	Servercat	
+ Zoho	Zoho	
+ Harington	Harington	
+ Hades	Hades	
+ Gecko	Gecko	
+ Omicron	Omicron	
+ TinyPNG	Tinypng	
+ Thanos	Thanos	
+ XML	Xml	
+ Extensible Markup Language	Xml	
+ Extensible Markup Language	Extensiblemarkuplanguage	
+ XHTML	Xhtml	
+ eXtensible HyperText Markup Language	Xhtml	
+ eXtensible HyperText Markup Language	Extensiblehypertextmarkuplanguage	
+ Googlebot	Googlebot	
+ Baiduspider	Baiduspider	
+ Bingbot	Bingbot	
+ SogouSpider	Sogouspider	
+ YoudaoBot	Youdaobot	
+ swat	Swat	
+ footer	Footer	
+ header	Header	
+ GitHub Copilot	Githubcopilot	
+ GitHub Copilot X	Githubcopilotx	
+ GitHub Copilot CLI	Githubcopilotcli	
+ GitHub Copilot chat	Githubcopilotchat	
+ iPadOS	Ipados	
+ Apple Pencil	Applepencil	
+ Reddit	Reddit	
+ HHKB	Hhkb	
+ Happy Hacking Keyboard	Hhkb	
+ Happy Hacking Keyboard	Happyhackingkeyboard	
+ MAPPA	Mappa	
+ SEO	Seo	
+ Search Engine Optimization	Seo	
+ Search Engine Optimization	Searchengineoptimization	
+ OCSP	Ocsp	
+ Online Certificate Status Protocol	Ocsp	
+ Online Certificate Status Protocol	Onlinecertificatestatusprotocol	
+ Arthas	Arthas	
+ Wordle	Wordle	
+ Silicon Valley	Siliconvalley	
+ Pied Piper	Piedpiper	
+ Pikachu	Pikachu	
+ Fastmail	Fastmail	
+ rumour	Rumour	
+ WordPress	Wordpress	
+ AOSP	Aosp	
+ Android Open Source Project	Aosp	
+ Android Open Source Project	Androidopensourceproject	
+ React	React	
+ TypeScript	Typescript	
+ Unity	Unity	
+ MIUI	Miui	
+ Shottr	Shottr	
+ turbo	Turbo	
+ Turbo Boost	Turboboost	
+ Turbo Boost Switcher	Turboboostswitcher	
+ P2P	Pp	
+ OPPO	Oppo	
+ vivo	Vivo	
+ Uno	Uno	
+ Gopher	Gopher	
+ GDPR	Gdpr	
+ General Data Protection Regulation	Gdpr	
+ Netlify	Netlify	
+ Mac Studio	Macstudio	
+ Studio Display	Studiodisplay	
+ OC	Oc	
+ Objective-C	Oc	
+ Objective-C	Objectivec	
+ Mac mini	Macmini	
+ Garena	Garena	
+ WonderCV	Wondercv	
+ Spark	Spark	
+ WebKit	Webkit	
+ Blink	Blink	
+ Opera	Opera	
+ Igalia	Igalia	
+ WebCore	Webcore	
+ GNU	Gnu	
+ GNU General Public License	Gnu	
+ GNU General Public License	Gnugeneralpubliclicense	
+ GPL	Gpl	
+ GNU General Public License	Gpl	
+ Delta	Delta	
+ Ukraine	Ukraine	
+ Minions	Minions	
+ Rush B	Rushb	
+ Rush A	Rusha	
+ AK	Ak	
+ AK47	Ak	
+ AK74	Ak	
+ Mastercard	Mastercard	
+ COVID	Covid	
+ COVID-19	Covid	
+ Wallpaper Engine	Wallpaperengine	
+ Erlang	Erlang	
+ FAQ	Faq	
+ Frequently Asked Question	Faq	
+ Frequently Asked Question	Frequentlyaskedquestion	
+ Panamera	Panamera	
+ FaceTime	Facetime	
+ FaceTime Audio	Facetimeaudio	
+ LMAO	Lmao	
+ Laugh My Ass Off	Lmao	
+ Laugh My Ass Off	Laughmyassoff	
+ Vivaldi	Vivaldi	
+ Cryptomator	Cryptomator	
+ WTF	Wtf	
+ what the fuck	Wtf	
+ what the fuck	Whatthefuck	
+ ASAP	Asap	
+ as soon as possible	Asap	
+ PUBG	Pubg	
+ PLAYERUNKNOWN'S BATTLEGROUNDS	Pubg	
+ Ruby	Ruby	
+ GFM	Gfm	
+ GitHub Flavored Markdown	Gfm	
+ GitHub Flavored Markdown	Githubflavoredmarkdown	
+ GeekNote	Geeknote	
+ GUI	Gui	
+ Graphical User Interface	Gui	
+ Graphical User Interface	Graphicaluserinterface	
+ VPS	Vps	
+ Virtual private server	Vps	
+ Virtual private server	Virtualprivateserver	
+ BIOS	Bios	
+ Basic Input/Output System	Bios	
+ Basic Input/Output System	Basicinputoutputsystem	
+ unbelievable	Unbelievable	
+ goroutine	Goroutine	
+ Celsius	Celsius	
+ Fahrenheit	Fahrenheit	
+ nil	Nil	
+ NULL	Null	
+ Slice	Slice	
+ Map	Map	
+ Mojito	Mojito	
+ Toolbox	Toolbox	
+ Weasel	Weasel	
+ weasel	Weasel	
+ Niconico	Niconico	
+ TickTick	Ticktick	
+ CHDBits	Chdbits	
+ M-team	Mteam	
+ Emacs	Emacs	
+ Vim	Vim	
+ Wikipedia	Wikipedia	
+ Google Voice	Googlevoice	
+ Workers	Workers	
+ Cloudflare Workers	Cloudflareworkers	
+ PlayStation	Playstation	
+ Visual Studio	Visualstudio	
+ Microsoft Visual Studio	Microsoftvisualstudio	
+ Microsoft Visual Studio	Visualstudio	
+ AVIF	Avif	
+ AV1 Image File Format	Avif	
+ Apple Arcade	Applearcade	
+ Microsoft Corporation	Microsoftcorporation	
+ Microsoft Windows	Microsoftwindows	
+ MS-DOS	Msdos	
+ Microsoft Office	Microsoftoffice	
+ Microsoft Office	Office	
+ Microsoft Word	Microsoftword	
+ Microsoft Word	Word	
+ Microsoft Excel	Microsoftexcel	
+ Microsoft Excel	Excel	
+ Microsoft Access	Microsoftaccess	
+ Microsoft PowerPoint	Microsoftpowerpoint	
+ Microsoft PowerPoint	Powerpoint	
+ Microsoft Outlook	Microsoftoutlook	
+ Outlook	Outlook	
+ Microsoft Outlook	Outlook	
+ Microsoft OneNote	Microsoftonenote	
+ Microsoft OneNote	Onenote	
+ IE	Ie	
+ Internet Explorer	Ie	
+ Internet Explorer	Internetexplorer	
+ Windows Media Player	Windowsmediaplayer	
+ Media Player	Mediaplayer	
+ Windows Media Player	Mediaplayer	
+ Microsoft Edge	Microsoftedge	
+ Visual Studio Code	Visualstudiocode	
+ Visual Studio Code	Vscode	
+ PowerShell	Powershell	
+ .NET	Net	
+ Surface	Surface	
+ MSN	Msn	
+ Skype	Skype	
+ TOC	Toc	
+ Table of Contents	Toc	
+ Table of Contents	Tableofcontents	
+ Jenny	Jenny	
+ One Dark	Onedark	
+ IINA	Iina	
+ GUID	Guid	
+ Globally Unique Identifier	Guid	
+ Globally Unique Identifier	Globallyuniqueidentifier	
+ APFS	Apfs	
+ Apple File System	Apfs	
+ NTFS	Ntfs	
+ New Technology File System	Ntfs	
+ New Technology File System	Newtechnologyfilesystem	
+ Microsoft NTFS	Ntfs	
+ Microsoft NTFS	Microsoftntfs	
+ ChromeOS	Chromeos	
+ GCD	Gcd	
+ Grand Central Dispatch	Gcd	
+ Grand Central Dispatch	Grandcentraldispatch	
+ greatest common divisor	Gcd	
+ greatest common divisor	Greatestcommondivisor	
+ Ed Sheeran	Edsheeran	
+ Sheeran	Sheeran	
+ Cloudflare Images	Cloudflareimages	
+ Cloudflare Stream	Cloudflarestream	
+ Zero Trust	Zerotrust	
+ goroutines	Goroutines	
+ Universal Actions	Universalactions	
+ Google Drive	Googledrive	
+ Google One	Googleone	
+ Tor	Tor	
+ Airbnb	Airbnb	
+ OpenCC	Opencc	
+ HarmonyOS	Harmonyos	
+ Incase	Incase	
+ NPC	Npc	
+ Non-Player Character	Npc	
+ Non-Player Character	Nonplayercharacter	
+ MVP	Mvp	
+ Quantumult X	Quantumultx	
+ Confluence	Confluence	
+ followers	Followers	
+ Skynet	Skynet	
+ Serverless	Serverless	
+ Air	Air	
+ Identifier	Identifier	
+ NameCheap	Namecheap	
+ rime-ice	Rimeice	
+ Handover	Handover	
+ Language Reactor	Languagereactor	
+ Tencent	Tencent	
+ Alibaba	Alibaba	
+ Alibaba Group	Alibabagroup	
+ Linus	Linus	
+ PaaS	Paas	
+ platform as a service	Paas	
+ aPaaS	Apaas	
+ application Platform as a Service	Apaas	
+ WhatsApp	Whatsapp	
+ Messenger	Messenger	
+ Doge	Doge	
+ SUV	Suv	
+ Sport Utility Vehicle	Suv	
+ Sport Utility Vehicle	Sportutilityvehicle	
+ UFO	Ufo	
+ Unidentified Flying Object	Ufo	
+ Unidentified Flying Object	Unidentifiedflyingobject	
+ Copyright	Copyright	
+ Registered	Registered	
+ TM	Tm	
+ Joker	Joker	
+ SOS	Sos	
+ abcd	Abcd	
+ ABCD	Abcd	
+ abc	Abc	
+ ABC	Abc	
+ Starbucks	Starbucks	
+ I Love You	Iloveyou	
+ ZZZ	Zzz	
+ PS	Ps	
+ Photoshop	Ps	
+ Photoshop	Photoshop	
+ Adobe Photoshop	Adobephotoshop	
+ dashboard	Dashboard	
+ Honey Select	Honeyselect	
+ McCafe	Mccafe	
+ BSD	Bsd	
+ Berkeley Software Distribution	Bsd	
+ Berkeley Software Distribution	Berkeleysoftwaredistribution	
+ DNSPod	Dnspod	
+ Bandizip	Bandizip	
+ NATO	Nato	
+ North Atlantic Treaty Organization	Nato	
+ North Atlantic Treaty Organization	Northatlantictreatyorganization	
+ MissWarmJ	Misswarmj	
+ Miss	Miss	
+ NASA	Nasa	
+ National Aeronautics and Space Administration	Nasa	
+ Meta	Meta	
+ PictureView	Pictureview	
+ RAM	Ram	
+ Random-access memory	Ram	
+ Random-access memory	Randomaccessmemory	
+ ROM	Rom	
+ Read-only memory	Rom	
+ Read-only memory	Readonlymemory	
+ AV	Av	
+ Adult Video	Av	
+ Adult Video	Adultvideo	
+ TODO	Todo	
+ Microsoft To Do	Microsofttodo	
+ VCD	Vcd	
+ Video CD	Vcd	
+ Video CD	Videocd	
+ FBI	Fbi	
+ Federal Bureau of Investigation	Fbi	
+ Federal Bureau of Investigation	Federalbureauofinvestigation	
+ FBI WARNING	Fbiwarning	
+ CDPR	Cdpr	
+ CD Projekt	Cdpr	
+ CD Projekt	Cdprojekt	
+ CD Projekt RED	Cdprojektred	
+ ACG	Acg	
+ Animation Comics Games	Acg	
+ NBA	Nba	
+ National Basketball Association	Nba	
+ National Basketball Association	Nationalbasketballassociation	
+ CBA	Cba	
+ Chinese Basketball Association	Cba	
+ Chinese Basketball Association	Chinesebasketballassociation	
+ SpaceX	Spacex	
+ Avira	Avira	
+ uninstall	Uninstall	
+ FeHelper	Fehelper	
+ Hypertext	Hypertext	
+ PHP	Php	
+ Hypertext Preprocessor	Php	
+ Hypertext Preprocessor	Hypertextpreprocessor	
+ cannot	Cannot	
+ duang	Duang	
+ placeholder	Placeholder	
+ Pythonic	Pythonic	
+ redefine	Redefine	
+ QSpace	Qspace	
+ Path Finder	Pathfinder	
+ Tabnine	Tabnine	
+ Bonjour	Bonjour	
+ ICMP	Icmp	
+ Internet Control Message Protocol	Icmp	
+ Internet Control Message Protocol	Internetcontrolmessageprotocol	
+ Electron	Electron	
+ FTP	Ftp	
+ File Transfer Protocol	Ftp	
+ File Transfer Protocol	Filetransferprotocol	
+ SFTP	Sftp	
+ SSH File Transfer Protocol	Sftp	
+ SSH File Transfer Protocol	Sshfiletransferprotocol	
+ uPic	Upic	
+ homemade	Homemade	
+ Fig	Fig	
+ refactoring	Refactoring	
+ refactor	Refactor	
+ Notepad	Notepad	
+ Notepad++	Notepad	
+ O'Reilly	O'reilly	
+ Octocat	Octocat	
+ IMAP	Imap	
+ Internet Message Access Protocol	Imap	
+ Internet Message Access Protocol	Internetmessageaccessprotocol	
+ SMTP	Smtp	
+ Simple Mail Transfer Protocol	Smtp	
+ Simple Mail Transfer Protocol	Simplemailtransferprotocol	
+ unacceptable	Unacceptable	
+ Waterfox	Waterfox	
+ Let's Go	Let'sgo	
+ one-liner	Oneliner	
+ Callback	Callback	
+ SSID	Ssid	
+ Service Set Identifier	Ssid	
+ Service Set Identifier	Servicesetidentifier	
+ Time Machine	Timemachine	
+ regexp	Regexp	
+ FOSS	Foss	
+ Free and open source software	Foss	
+ Free and open source software	Freeandopensourcesoftware	
+ InfoQ	Infoq	
+ SFC	Sfc	
+ Software Freedom Conservancy	Sfc	
+ Software Freedom Conservancy	Softwarefreedomconservancy	
+ PopCap	Popcap	
+ PopCap Games	Popcapgames	
+ Cyberpunk	Cyberpunk	
+ Kotlin	Kotlin	
+ PhpStorm	Phpstorm	
+ Rider	Rider	
+ Datalore	Datalore	
+ DataSpell	Dataspell	
+ RubyMine	Rubymine	
+ AppCode	Appcode	
+ PyCharm Edu	Pycharmedu	
+ IntelliJ IDEA Edu	Intellijideaedu	
+ Code With Me	Codewithme	
+ JetBrains Mono	Jetbrainsmono	
+ JVM	Jvm	
+ Java Virtual Machine	Jvm	
+ Java Virtual Machine	Javavirtualmachine	
+ Java EE	Javaee	
+ ReSharper	Resharper	
+ dotPeek	Dotpeek	
+ dotTrace	Dottrace	
+ dotMemory	Dotmemory	
+ dotCover	Dotcover	
+ TeamCity	Teamcity	
+ EduTools	Edutools	
+ FIFO	Fifo	
+ First In, First Out	Fifo	
+ LIFO	Lifo	
+ Last In, First out	Lifo	
+ Neat Download Manager	Neatdownloadmanager	
+ furry	Furry	
+ Maine	Maine	
+ Elijah	Elijah	
+ Love & Peace	Lovepeace	
+ Peace & Love	Peacelove	
+ Liquid	Liquid	
+ LCD	Lcd	
+ Liquid Crystal Display	Lcd	
+ Liquid Crystal Display	Liquidcrystaldisplay	
+ Emotional Damage	Emotionaldamage	
+ revert	Revert	
+ GitLab	Gitlab	
+ Apple silicon	Applesilicon	
+ ADSL	Adsl	
+ Asymmetric Digital Subscriber Line	Adsl	
+ Asymmetric Digital Subscriber Line	Asymmetricdigitalsubscriberline	
+ ICP	Icp	
+ Internet Content Provider	Icp	
+ Internet Content Provider	Internetcontentprovider	
+ iRime	Irime	
+ emo	Emo	
+ colon	Colon	
+ APK	Apk	
+ Android application package	Apk	
+ Android application package	Androidapplicationpackage	
+ whack	Whack	
+ encore	Encore	
+ suffix	Suffix	
+ prefix	Prefix	
+ Type-A	Typea	
+ Type-B	Typeb	
+ Type-C	Typec	
+ USB Type-A	Usbtypea	
+ USB Type-B	Usbtypeb	
+ USB Type-C	Usbtypec	
+ USB-A	Usba	
+ USB-B	Usbb	
+ USB-C	Usbc	
+ vex	Vex	
+ tempest	Tempest	
+ J.R.R. Tolkien	Jrrtolkien	
+ Impostor Factory	Impostorfactory	
+ impostor	Impostor	
+ Vampire Survivors	Vampiresurvivors	
+ AppCleaner	Appcleaner	
+ IQIYI	Iqiyi	
+ BuhoCleaner	Buhocleaner	
+ Midjourney	Midjourney	
+ Champion's inequality	Champion'sinequality	
+ NovelAI	Novelai	
+ swab	Swab	
+ angular	Angular	
+ addressable	Addressable	
+ rebase	Rebase	
+ Motrix	Motrix	
+ VCS	Vcs	
+ version control system	Vcs	
+ version control system	Versioncontrolsystem	
+ cnBeta	Cnbeta	
+ pull request	Pullrequest	
+ merge request	Mergerequest	
+ squash	Squash	
+ Ant Design	Antdesign	
+ Disney	Disney	
+ early access	Earlyaccess	
+ deprecate	Deprecate	
+ deprecated	Deprecated	
+ tum	Tum	
+ rapper	Rapper	
+ fucked	Fucked	
+ Fedora	Fedora	
+ downbeat	Downbeat	
+ hading	Hading	
+ LeetCode	Leetcode	
+ danced	Danced	
+ swept	Swept	
+ spun	Spun	
+ ghosts	Ghosts	
+ admiral	Admiral	
+ moonlit	Moonlit	
+ Helvetica	Helvetica	
+ rewrite	Rewrite	
+ limon	Limon	
+ annotate	Annotate	
+ annotated	Annotated	
+ GFW	Gfw	
+ Great Firewall	Gfw	
+ Great Firewall	Greatfirewall	
+ departed	Departed	
+ GeoIP	Geoip	
+ Vimium	Vimium	
+ Nvim	Nvim	
+ Neovim	Neovim	
+ nerd	Nerd	
+ MacVim	Macvim	
+ VimR	Vimr	
+ plugin	Plugin	
+ plugins	Plugins	
+ buffer	Buffer	
+ LunarVim	Lunarvim	
+ IdeaVim	Ideavim	
+ unfo	Unfo	
+ timestamp	Timestamp	
+ ChatGPT	Chatgpt	
+ OpenAI	Openai	
+ OpenAI Codex	Openaicodex	
+ OpenAI ChatGPT	Openaichatgpt	
+ VoIP	Voip	
+ Voice over Internet Protocol	Voip	
+ Greasy Fork	Greasyfork	
+ greasy	Greasy	
+ GalGame	Galgame	
+ VoLTE	Volte	
+ VoWiFi	Vowifi	
+ Voice Over LTE	Volte	
+ capper	Capper	
+ shank	Shank	
+ shanks	Shanks	
+ CEF	Cef	
+ Chromium Embedded Framework	Cef	
+ Chromium Embedded Framework	Chromiumembeddedframework	
+ RustDesk	Rustdesk	
+ Capcom	Capcom	
+ watermark	Watermark	
+ Paxlovid	Paxlovid	
+ datetime	Datetime	
+ millisecond	Millisecond	
+ microsecond	Microsecond	
+ nanosecond	Nanosecond	
+ offload	Offload	
+ Hammerspoon	Hammerspoon	
+ CrossOver	Crossover	
+ hallelujahIM	Hallelujahim	
+ Trojan	Trojan	
+ AVAST!	Avast!	
+ Bitdefender	Bitdefender	
+ ClamAV	Clamav	
+ Comodo	Comodo	
+ McAfee	Mcafee	
+ OK	Ok	
+ NG	Ng	
+ TV	Tv	
+ VTuber	Vtuber	
+ NVMe	Nvme	
+ NGFF	Ngff	
+ PCIe	Pcie	
+ PCI Express	Pcie	
+ PCI Express	Pciexpress	
+ SATA	Sata	
+ eSATA	Esata	
+ mSATA	Msata	
+ GPIB	Gpib	
+ GPIO	Gpio	
+ DVD	Dvd	
+ CD	Cd	
+ eSIM	Esim	
+ UTF	Utf	
+ UTF-8	Utf	
+ UTF-16	Utf	
+ ASCII	Ascii	
+ ANSI	Ansi	
+ IEEE	Ieee	
+ Institute of Electrical and Electronics Engineers	Ieee	
+ DjVu	Djvu	
+ LaTeX	Latex	
+ API	Api	
+ Application Programming Interface	Api	
+ Ethernet	Ethernet	
+ SOCKS	Socks	
+ PrintScreen	Printscreen	
+ DIY	Diy	
+ Do It Yourself	Diy	
+ DNA	Dna	
+ deoxyribonucleic acid	Dna	
+ RNA	Rna	
+ ribonucleic acid	Rna	
+ mRNA	Mrna	
+ messenger RNA	Mrna	
+ C++	Cpp	
+ Python	Python	
+ Perl	Perl	
+ Swift	Swift	
+ MIT	Mit	
+ Massachusetts Institute of Technology	Mit	
+ Massachusetts Institute of Technology	Massachusettsinstituteoftechnology	
+ MIT License	Mitlicense	
+ LGPL	Lgpl	
+ GNU Lesser General Public License	Lgpl	
+ GNU Lesser General Public License	Gnulessergeneralpubliclicense	
+ Mozilla	Mozilla	
+ Mozilla Firefox	Mozillafirefox	
+ Apache	Apache	
+ Steam	Steam	
+ Steam Deck	Steamdeck	
+ Android	Android	
+ android	Android	
+ Arch	Arch	
+ iOS	Ios	
+ Linux	Linux	
+ Ubuntu	Ubuntu	
+ Microsoft	Microsoft	
+ Nintendo	Nintendo	
+ Google	Google	
+ Nexus	Nexus	
+ nexus	Nexus	
+ Pixel	Pixel	
+ Wii U	Wiiu	
+ Wii	Wii	
+ Oracle	Oracle	
+ OriginOS	Originos	
+ Chrome	Chrome	
+ Chromium	Chromium	
+ iPad	Ipad	
+ iPod	Ipod	
+ UI	Ui	
+ UK	Uk	
+ United Kingdom	Uk	
+ United Kingdom	Unitedkingdom	
+ DirectX	Directx	
+ Kinect	Kinect	
+ Azure	Azure	
+ azure	Azure	
+ Microsoft Azure 	Azure	
+ Microsoft Azure	Microsoftazure	
+ Cloudflare	Cloudflare	
+ Buddhism	Buddhism	
+ Catholic	Catholic	
+ Christ	Christ	
+ Christian	Christian	
+ Christmas	Christmas	
+ Easter	Easter	
+ Egyptian	Egyptian	
+ Islam	Islam	
+ Jupiter	Jupiter	
+ Latin	Latin	
+ Mars	Mars	
+ Marxist	Marxist	
+ Moslem	Moslem	
+ Negro	Negro	
+ Thanksgiving	Thanksgiving	
+ Venus	Venus	
+ X-ray	Xray	
+ American	American	
+ Australia	Australia	
+ Australian	Australian	
+ Brazil	Brazil	
+ Brazilian	Brazilian	
+ Britain	Britain	
+ Canada	Canada	
+ Canadian	Canadian	
+ Chinese	Chinese	
+ Danish	Danish	
+ Denmark	Denmark	
+ Dutch	Dutch	
+ Egypt	Egypt	
+ England	England	
+ English	English	
+ Filipino	Filipino	
+ Finland	Finland	
+ Finn	Finn	
+ Finnish	Finnish	
+ France	France	
+ French	French	
+ German	German	
+ Germany	Germany	
+ Greece	Greece	
+ Greek	Greek	
+ Hebrew	Hebrew	
+ Hindi	Hindi	
+ Hip-Hop	Hiphop	
+ Iceland	Iceland	
+ Icelander	Icelander	
+ Icelandic	Icelandic	
+ India	India	
+ Indian	Indian	
+ Iran	Iran	
+ Iranian	Iranian	
+ Ireland	Ireland	
+ Irish	Irish	
+ Irishman	Irishman	
+ Israel	Israel	
+ Israeli	Israeli	
+ Italian	Italian	
+ Italilian	Italilian	
+ Italy	Italy	
+ Japan	Japan	
+ Japanese	Japanese	
+ Korea	Korea	
+ Korean	Korean	
+ native American	Nativeamerican	
+ Netherlands	Netherlands	
+ New Zealand	Newzealand	
+ New Zealander	Newzealander	
+ Philppines	Philppines	
+ Poland	Poland	
+ Pole	Pole	
+ Polish	Polish	
+ Portugal	Portugal	
+ Portuguese	Portuguese	
+ Russia	Russia	
+ Russian	Russian	
+ Scotland	Scotland	
+ Scots	Scots	
+ Scottish	Scottish	
+ Simplified Chinese	Simplifiedchinese	
+ Traditional Chinese	Traditionalchinese	
+ Singapore	Singapore	
+ Spain	Spain	
+ Spanish	Spanish	
+ Swede	Swede	
+ Sweden	Sweden	
+ Swedish	Swedish	
+ Swiss	Swiss	
+ Thai	Thai	
+ Thailand	Thailand	
+ USA	Usa	
+ The United States of America	Usa	
+ United States	Unitedstates	
+ USD	Usd	
+ United States Dollar	Usd	
+ United States Dollar	Unitedstatesdollar	
+ Wales	Wales	
+ Welsh	Welsh	
+ CN	Cn	
+ MTV	Mtv	
+ Music Television	Mtv	
+ Music Television	Musictelevision	
+ Mrs.	Mrs	
+ MitM	Mitm	
+ man-in-the-middle	Mitm	
+ ToDesk	Todesk	
+ PreSearch	Presearch	
+ Odysee	Odysee	
+ ISBN	Isbn	
+ International Standard Book Number	Isbn	
+ International Standard Book Number	Internationalstandardbooknumber	
+ ISSN	Issn	
+ International Standard Serial Number	Issn	
+ International Standard Serial Number	Internationalstandardserialnumber	
+ QoS	Qos	
+ Quality of Service	Qos	
+ Quality of Service	Qualityofservice	
+ DoH	Doh	
+ DNS over HTTPS	Doh	
+ DNS over HTTPS/3	Doh	
+ DNS over HTTPS	Dnsoverhttps	
+ DNS over HTTPS/3	Dnsoverhttps	
+ DoQ	Doq	
+ DNS over QUIC	Doq	
+ DNS over QUIC	Dnsoverquic	
+ HK	Hk	
+ Hong Kong	Hk	
+ Hong Kong	Hongkong	
+ Party Animals	Partyanimals	
+ clipboard	Clipboard	
+ ABS	Abs	
+ Anti-lock Braking System	Abs	
+ Anti-lock Braking System	Antilockbrakingsystem	
+ ADHD	Adhd	
+ attention deficit hyperactivity disorder	Adhd	
+ attention deficit hyperactivity disorder	Attentiondeficithyperactivitydisorder	
+ BBQ	Bbq	
+ barbecue	Bbq	
+ BBS	Bbs	
+ Bulletin Board System	Bbs	
+ Bulletin Board System	Bulletinboardsystem	
+ Chrono	Chrono	
+ Widevine	Widevine	
+ Google Ads	Googleads	
+ Valhalla	Valhalla	
+ flies	Flies	
+ KFC	Kfc	
+ AWP	Awp	
+ Arctic Warfare Police	Awp	
+ Arctic Warfare Police	Arcticwarfarepolice	
+ CLI	Cli	
+ Command-Line Interface	Cli	
+ Command-Line Interface	Commandlineinterface	
+ Dnsmasq	Dnsmasq	
+ clique	Clique	
+ candid	Candid	
+ DOS	Dos	
+ Disk Operating System	Dos	
+ Disk Operating System	Diskoperatingsystem	
+ diss	Diss	
+ USDT	Usdt	
+ Tether	Tether	
+ Lua	Lua	
+ MacType	Mactype	
+ Alipay	Alipay	
+ WeChat Pay	Wechatpay	
+ Google Maps	Googlemaps	
+ Google Keep	Googlekeep	
+ Google Docs	Googledocs	
+ UPnP	Upnp	
+ Universal Plug and Play	Upnp	
+ Universal Plug and Play	Universalplugandplay	
+ DoS	Dos	
+ denial-of-service attack	Dos	
+ denial-of-service attack	Denialofserviceattack	
+ DDoS	Ddos	
+ distributed denial-of-service attack	Ddos	
+ distributed denial-of-service attack	Distributeddenialofserviceattack	
+ lullaby	Lullaby	
+ LibreWolf	Librewolf	
+ miscarry	Miscarry	
+ WebRTC	Webrtc	
+ WebDAV	Webdav	
+ SwiftUI	Swiftui	
+ watermarking	Watermarking	
+ jellyfish	Jellyfish	
+ Astro	Astro	
+ SigmaOS	Sigmaos	
+ switcher	Switcher	
+ fuckity	Fuckity	
+ Funtouch OS	Funtouchos	
+ fo	Fo	
+ layouts	Layouts	
+ redirect	Redirect	
+ redirects	Redirects	
+ Unix shell	Unixshell	
+ shells	Shells	
+ Zaraz	Zaraz	
+ waitlist	Waitlist	
+ diffusion	Diffusion	
+ Scribble Diffusion	Scribblediffusion	
+ Lenovo	Lenovo	
+ Adios	Adios	
+ EMS	Ems	
+ Express Mail Service	Ems	
+ IPFS	Ipfs	
+ InterPlanetary File System	Ipfs	
+ InterPlanetary File System	Interplanetaryfilesystem	
+ interplanetary	Interplanetary	
+ Noria	Noria	
+ DHCP	Dhcp	
+ Dynamic Host Configuration Protocol	Dhcp	
+ PPPoE	Pppoe	
+ Point-to-Point Protocol over Ethernet	Pppoe	
+ IPoE	Ipoe	
+ Internet Protocol over Ethernet	Ipoe	
+ VLAN	Vlan	
+ Virtual Local Area Network	Vlan	
+ WLAN	Wlan	
+ Wireless LAN	Wlan	
+ GPT	Gpt	
+ Generative Pre-trained Transformer	Gpt	
+ GPT-4	Gpt	
+ Bard	Bard	
+ bard	Bard	
+ LaMDA	Lamda	
+ tokens	Tokens	
+ roadmap	Roadmap	
+ Coinbase Wallet	Coinbasewallet	
+ MetaMask	Metamask	
+ favicon	Favicon	
+ Discord	Discord	
+ New Bing	Newbing	
+ Notion AI	Notionai	
+ memos	Memos	
+ flomo	Flomo	
+ arabica	Arabica	
+ robusta	Robusta	
+ HanLP	Hanlp	
+ Arch Linux	Archlinux	
+ AlmaLinux	Almalinux	
+ Fedora CoreOS	Fedoracoreos	
+ CoreOS	Coreos	
+ OpenBSD	Openbsd	
+ Rocky Linux	Rockylinux	
+ Vultr	Vultr	
+ GoFrame	Goframe	
+ ORM	Orm	
+ Object Relational Mapping	Orm	
+ Gin	Gin	
+ iris	Iris	
+ burnt	Burnt	
+ KPI	Kpi	
+ Key Performance Indicators	Kpi	
+ mutex	Mutex	
+ TIOBE	Tiobe	
+ DigitalOcean	Digitalocean	
+ Google Authenticator	Googleauthenticator	
+ Authenticator	Authenticator	
+ authenticator	Authenticator	
+ Depay	Depay	
+ Codeium	Codeium	
+ OpenCat	Opencat	
+ AWS	Aws	
+ Amazon Web Services	Aws	
+ Amazon Web Services	Amazonwebservices	
+ Gemini	Gemini	
+ gemini	Gemini	
+ Orion	Orion	
+ Virgo	Virgo	
+ Aries	Aries	
+ Taurus	Taurus	
+ Cancer	Cancer	
+ Libra	Libra	
+ Scorpio	Scorpio	
+ Sagittarius	Sagittarius	
+ Capricorn	Capricorn	
+ Aquarius	Aquarius	
+ Pisces	Pisces	
+ tailwind	Tailwind	
+ Fcitx	Fcitx	
+ openSUSE	Opensuse	
+ defer	Defer	
+ FOMO	Fomo	
+ Fear of Missing Out	Fomo	
+ rune	Rune	
+ wick	Wick	
+ meow	Meow	
+ woof	Woof	
+ bromite	Bromite	
+ hutch	Hutch	
+ Laotian	Laotian	
+ mitigation	Mitigation	
+ transformer	Transformer	
+ mayonnaise	Mayonnaise	
+ orz	Orz	
+ parametric	Parametric	
+ Scooby-Doo	Scoobydoo	
+ SpongeBob	Spongebob	
+ SquarePants	Squarepants	
+ SpongeBob SquarePants	Spongebobsquarepants	
+ Louis Vuitton	Louisvuitton	
+ FIFA	Fifa	
+ Fédération Internationale de Football Association	Fifa	
+ FYI	Fyi	
+ for your information	Fyi	
+ IPO	Ipo	
+ Initial Public Offerings	Ipo	
+ MVC	Mvc	
+ Model-View-Controller	Mvc	
+ MVVM	Mvvm	
+ Model-View-ViewModel	Mvvm	
+ NGO	Ngo	
+ Non-Governmental Organization	Ngo	
+ OMG	Omg	
+ Oh My God	Omg	
+ RFT	Rft	
+ Rich Text Format	Rft	
+ SVG	Svg	
+ Scalable Vector Graphics	Svg	
+ SVN	Svn	
+ Apache Subversion	Svn	
+ TLS	Tls	
+ Transport Layer Security	Tls	
+ Secure Sockets Layer	Ssl	
+ UDP	Udp	
+ User Datagram Protocol	Udp	
+ TCP	Tcp	
+ Transmission Control Protocol	Tcp	
+ UID	Uid	
+ User ID	Uid	
+ USSR	Ussr	
+ Union of Soviet Socialist Republics	Ussr	
+ WMV	Wmv	
+ Windows Media Video	Wmv	
+ WWI	Wwi	
+ World War I	Wwi	
+ WWII	Wwii	
+ World War II	Wwii	
+ WWIII	Wwiii	
+ World War III	Wwiii	
+ PL/pgSQL	Plpgsql	
+ Procedural Language / PostGres Structured Query Language	Plpgsql	
+ IQ	Iq	
+ Intelligence quotient	Iq	
+ quotient	Quotient	
+ BTW	Btw	
+ by the way	Btw	
+ QUIC	Quic	
+ Quick UDP Internet Connections	Quic	
+ SRWare Iron	Srwareiron	
+ trending	Trending	
+ Nexitally	Nexitally	
+ AGI	Agi	
+ Artificial general intelligence	Agi	
+ Strong AI	Strongai	
+ Weak AI	Weakai	
+ Narrow AI	Narrowai	
+ Applied AI	Appliedai	
+ BREAKING CHANGE	Breakingchange	
+ GitHub Actions	Githubactions	
+ UUID	Uuid	
+ Universally Unique Identifier	Uuid	
+ stargazers	Stargazers	
+ fallback	Fallback	
+ Fyne	Fyne	
+ Claude	Claude	
+ Claude+	Claude	
+ Anthropic	Anthropic	
+ Poe	Poe	
+ overdue	Overdue	
+ Cinderella	Cinderella	
+ WebGPU	Webgpu	
+ Mailfence	Mailfence	
+ gimme	Gimme	
+ CodeWhisperer	Codewhisperer	
+ Heisenberg	Heisenberg	
+ Codex	Codex	
+ storyteller	Storyteller	
+ troublemaker	Troublemaker	
+ troublemaking	Troublemaking	
+ espanso	Espanso	
+ okey	Okey	
+ okey dokey	Okeydokey	
+ CAPTCHA	Captcha	
+ Coinbase	Coinbase	
+ Kraken	Kraken	
+ Huobi	Huobi	
+ Bitfinex	Bitfinex	
+ KuCoin	Kucoin	
+ OKX	Okx	
+ Arbitrum	Arbitrum	
+ Avalanche	Avalanche	
+ Binance	Binance	
+ Binance Smart Chain	Binancesmartchain	
+ OpenSea	Opensea	
+ BNB Chain	Bnbchain	
+ Chainlink	Chainlink	
+ Cosmos	Cosmos	
+ Cardano	Cardano	
+ Polkadot	Polkadot	
+ Solana	Solana	
+ Starknet	Starknet	
+ Optimism	Optimism	
+ Polygon	Polygon	
+ NEAR Protocol	Nearprotocol	
+ Lens Protocal	Lensprotocal	
+ zkSync	Zksync	
+ Arweave	Arweave	
+ Filecoin	Filecoin	
+ Harmony	Harmony	
+ Harmony One	Harmonyone	
+ DApp	Dapp	
+ DApps	Dapps	
+ Uniswap	Uniswap	
+ SushiSwap	Sushiswap	
+ PancakeSwap	Pancakeswap	
+ JediSwap	Jediswap	
+ Orbiter	Orbiter	
+ MakerDAO	Makerdao	
+ Compound	Compound	
+ Aave	Aave	
+ Curve	Curve	
+ Curve Finance	Curvefinance	
+ dYdX	Dydx	
+ NFT	Nft	
+ Non-Fungible Token	Nft	
+ Solidity	Solidity	
+ Argent	Argent	
+ argent	Argent	
+ Argent X	Argentx	
+ Braavos	Braavos	
+ Braavos Wallet	Braavos	
+ OneKey	Onekey	
+ Hamster	Hamster	
+ hamster	Hamster	
+ hamsters	Hamsters	
+ DYOR	Dyor	
+ Do Your Own Research	Dyor	
+ Noita	Noita	
+ Screen Studio	Screenstudio	
+ Norah	Norah	
+ floccus	Floccus	
+ Wappalyzer	Wappalyzer	
+ phony	Phony	
+ noop	Noop	
+ Kung Fu	Kungfu	
+ prefixes	Prefixes	
+ suffixes	Suffixes	
+ DeepMind	Deepmind	
+ Google DeepMind	Googledeepmind	
+ TL;DR	Tldr	
+ Ant-Man	Antman	
+ Spider-Man	Spiderman	
+ ungoogled	Ungoogled	
+ ungoogled-chromium	Ungoogledchromium	
+ taxman	Taxman	
+ RouterOS	Routeros	
+ Sumatra	Sumatra	
+ Sumatra PDF	Sumatrapdf	
+ sideload	Sideload	
+ sideloading	Sideloading	
+ misdirection	Misdirection	
+ librime	Librime	
+ JRPG	Jrpg	
+ Japanese Role-Playing Game	Jrpg	
+ Kuromis	Kuromis	
+ sorcerer	Sorcerer	
+ sorcerers	Sorcerers	
+ werewolf	Werewolf	
+ disjunction	Disjunction	
+ heil	Heil	
+ maintainers	Maintainers	
+ AmyTelecom	Amytelecom	
+ Patreon	Patreon	
+ Anaconda	Anaconda	
+ LLaMA	Llama	
+ Large Language Model Meta AI	Llama	
+ fellatio	Fellatio	
+ silo	Silo	
+ R.I.P	Rip	
+ requiescat	Requiescat	
+ AIGC	Aigc	
+ AI Generated Content	Aigc	
+ Presto	Presto	
+ presto	Presto	
+ Upscayl	Upscayl	
+ Cocos Creator	Cocoscreator	
+ John Wick	Johnwick	
+ firetruck	Firetruck	
+ prankster	Prankster	
+ pranksters	Pranksters	
+ npm	Npm	
+ Node Package Manager	Npm	
+ Node Package Manager	Nodepackagemanager	
+ Apple Vision	Applevision	
+ Apple Vision Pro	Applevisionpro	
+ Vision Pro	Visionpro	
+ shithead	Shithead	
+ internationalization	Internationalization	
+ multilingualization	Multilingualization	
+ personalization	Personalization	
+ Kubernetes	Kubernetes	
+ containerized	Containerized	
+ shitty	Shitty	
+ shitwork	Shitwork	
+ A4	A	
+ polyphone	Polyphone	
+ traditionalization	Traditionalization	
+ traditionalize	Traditionalize	
+ traditionalist	Traditionalist	
+ traditionalistic	Traditionalistic	
+ simplification	Simplification	
+ simplifier	Simplifier	
+ Loki	Loki	

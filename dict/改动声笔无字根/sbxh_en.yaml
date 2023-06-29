@@ -1,0 +1,19 @@
+# encoding: utf-8
+#·½°¸.custom.yaml
+# __include: sbxh_en:/patch
+
+patch:
+  schema/dependencies/@next: sbxh_en
+  engine/translators/@next: table_translator@english
+  recognizer/patterns/special: "(?<![A-Za-z])[A-Z][a-z]+"
+  speller/alphabet: "zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA/`"
+  speller/initials: "zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA/`"
+  english:
+    dictionary: sbxh_en
+    enable_completion: true
+    enable_user_dict: true
+    encode_commit_history: true
+    db_class: plain_userdb
+    comment_format:
+      - xform/^.+$//
+

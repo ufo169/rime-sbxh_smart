@@ -1,0 +1,200 @@
+# encoding: utf-8
+schema:
+  schema_id: sbxh_smart
+  name: sbxh_smart
+  version: "1.0"
+  author:
+    - CarpeDiem
+  description:
+    声笔小鹤
+  dependencies:
+    - sbxh_stroke
+    - pinyin
+    - sbxh_en
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: simplification
+    reset: 1
+    states: [ 漢字, 汉字 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+    reset: 0
+  - name: emoji
+    reset: 0
+    states: [ "🈚️", "🈶️" ]
+  - name: danzi_mode
+    reset: 0
+    states: [ "词组", "单字" ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - lua_processor@topup_processor
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - affix_segmentor@sdzc
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+
+  translators:
+    - punct_translator
+    - table_translator
+    - table_translator@second_translator
+    - reverse_lookup_translator
+    - table_translator@sdzc
+    - table_translator@zdzc
+    - history_translator@historyI
+    - table_translator@custom_phrase
+    - lua_translator@date_translator
+    - lua_translator@*lunar
+    - table_translator@english
+
+  filters:
+    - simplifier
+    - simplifier@emoji
+#    - lua_filter@preedit_emoji
+    - uniquifier
+
+speller:
+  alphabet: bpmfdtnlgkhjqxzcsrywaoeiuv;ZYXWVUTSRQPONMLKJIHGFEDCBA\
+  initials: bpmfdtnlgkhjqxzcsrywaoeiuv;ZYXWVUTSRQPONMLKJIHGFEDCBA\
+  auto_select: true
+  delimiter: " '"
+  algebra:
+
+translator:
+  dictionary: sbxh_smart.extended
+  prism: sbxh_smart
+  enable_completion: true
+  enable_encoder: false
+  enable_sentence: false
+  enable_user_dict: false
+  encode_commit_history: false
+  initial_quality: 1000
+  disable_user_dict_for_patterns:
+    - "^o.*$"
+    - "^`.*$"
+    - "^[a-y]{1,3}$"               #三码及以下不使用自动调频、不自动造词
+  comment_format:
+#    - xform/^.+$//                #注销显示逐码提示
+    - xform/~//
+
+second_translator:
+  dictionary: sbxh_stroke
+  enable_completion: true
+  enable_encoder: false
+  enable_sentence: false
+  encode_commit_history: false
+  enable_user_dict: false
+  db_class: plain_userdb
+  initial_quality: 1
+
+zdzc:
+  __include: /second_translator
+  enable_encoder: true
+  enable_user_dict: true
+  db_class: plain_userdb
+  encode_commit_history: false    # 开启/关闭自动造词功能：true/false。
+  initial_quality: -1.5
+  comment_format:
+#    - xform/^.+$//               #注销显示逐码提示
+    - xform/~//
+
+sdzc:
+  __include: /second_translator
+  enable_sentence: true
+  prefix: "'"
+  tips: "〔手动造词〕"
+  tag: sdzc
+  initial_quality: -1
+
+historyI:
+   input: i
+   size: 1                        #重复前几次上屏
+   initial_quality: 0             #次选
+
+custom_phrase:
+  dictionary: ""
+  user_dict: custom_phrase
+  db_class: stabledb
+  enable_completion: true
+  enable_sentence: false
+  initial_quality: 1
+
+english:
+  dictionary: sbxh_en
+  enable_completion: true
+  enable_user_dict: true
+  encode_commit_history: true
+  db_class: plain_userdb
+  comment_format:
+    - xform/^.+$//
+
+reverse_lookup:
+  dictionary: pinyin
+  prefix: "`"
+  tips: 〔拼音〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+
+emoji:
+  opencc_config: emoji.json
+  option_name: emoji
+  tips: all
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+  bindings:
+    - { when: has_menu, accept: comma, send: comma }
+    - { when: has_menu, accept: period, send: period }
+    - { when: has_menu, accept: bracketleft, send: Prior }
+    - { when: has_menu, accept: bracketright, send: Next }
+#    - { accept: "Shift+Shift_R", select: .next, when: always}     #切换方案
+    - { accept: "Control+Control_L", select: .next, when: always}  #切换方案
+recognizer:
+  import_preset: default
+  patterns:
+    #uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+    uppercase: ""                                           #中文状态大写锁定直接上屏
+    reverse_lookup: "`[a-z]*'?$"
+    sdzc: "^[a-z]*'[a-z']*$"
+#    special: "^([a-z][aeuio][bpmfdtnlgkhjqxzhrzcsywv])"
+    special: "(?<![A-Za-z])[A-Z][a-z]+"                     #首字母大写不顶功，方便自定义短语和英文的输入
+
+#input_code:
+#    date: orq
+#    time: osj
+#    week: oxq
+#    Season: ojj
+#    lunar: onl
+
+topup:
+  topup_with: "aeiou"     # 顶功集合码，通常为形码
+  min_length: 4           # 无顶功码自动上屏的长度
+  min_length_danzi: 2     # 单字模式无顶功码自动上屏的长度（开关：danzi_mode）
+  max_length: 6           # 全码上屏的长度
+  auto_clear: false       # 顶功空码时是否清空输入
+  topup_command: true     # 为true时，首码为顶码时禁用顶功逻辑（如orq）
+
+style:
+  theme_name: flypy

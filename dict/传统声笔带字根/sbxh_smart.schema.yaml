@@ -120,8 +120,7 @@ custom_phrase:
   dictionary: ""
   user_dict: custom_phrase
   db_class: stabledb
-  enable_completion: false
-  enable_sentence: false
+  enable_completion: true
   initial_quality: 1
 
 reverse_lookup:
@@ -152,6 +151,7 @@ key_binder:
 recognizer:
   import_preset: default
   patterns:
+    uppercase: ""                                           #中文状态大写锁定直接上屏
     reverse_lookup: "`[a-z]*'?$"
     sdzc: "^[a-z]*'[a-z']*$"
     special: "^([a-z][aeuio][bpmfdtnlgkhjqxzhrzcsywv])"
