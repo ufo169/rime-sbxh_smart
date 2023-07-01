@@ -5,7 +5,7 @@
 patch:
   schema/dependencies/@next: sbxh_en
   engine/translators/@next: table_translator@english
-  recognizer/patterns/special: "(?<![A-Za-z])[A-Z][a-z]+"
+  recognizer/patterns/special: "(?<![A-Za-z])[A-Z][A-Za-z]+"
   speller/alphabet: "zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA/`"
   speller/initials: "zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA/`"
   english:
