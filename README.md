@@ -18,29 +18,29 @@
   英文造词功能等  	  
     
 rime.lua添加  
->topup_processor = require("jd27_topup")  
->date_translator = require("date")  
+  topup_processor = require("jd27_topup")  
+  date_translator = require("date")  
   
 default.custom.yaml或sharedsupport/default.yaml  
 schema_list/+:  
-`  - schema: sbxh_smart     `  
-`  - schema: sbxh_stroke    `  
-`  - schema: pinyin         `  
+  - schema: sbxh_smart     
+  - schema: sbxh_stroke    
+  - schema: pinyin         
 #后面两个属于依赖方案，可以注释  
 方案选择：sbxh_smart  
 
 输入规则：  
->  ①2字输入：s1y1s2y2b1b2  
-   ②3字输入：s1s2s3b1b2  
-   ③3字以上输入：s1s2s3s(end)b1b2  
+  ①2字输入：s1y1s2y2b1b2  
+  ②3字输入：s1s2s3b1b2  
+  ③3字以上输入：s1s2s3s(end)b1b2  
 可以，「无码加词」，即纯词组，会置后；编码相同时，权重大的置前  
 *bn相当于第n个字的首笔*  
 
 data：（自己可以查看输入编码或修改）  
->  日期：orq  
-   时间：osj  
-   星期：oxq  
-   季节：ojj  
+  日期：orq  
+  时间：osj  
+  星期：oxq  
+  季节：ojj  
 
 符号引导功能：  
 >  ` 引导拼音反查  
@@ -57,9 +57,9 @@ data：（自己可以查看输入编码或修改）
 
 全顶功声笔，改动说明（详细查看README.md）：  
 笔画键位声韵母变动：  
-`    zh     --→      f      
-`    sh     --→      j      
-`    ch     --→      k      
+`    zh     --→      f    `  
+`    sh     --→      j    `  
+`    ch     --→      k    `  
 `    a      --→      z    `  
 `    e      --→      d    `  
 `    u      --→      j    `  
