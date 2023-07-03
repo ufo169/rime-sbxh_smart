@@ -21,11 +21,11 @@ rime.lua添加
 >topup_processor = require("jd27_topup")  
 >date_translator = require("date")  
   
-default.custom.yaml或sharedsupport/default.yaml  
-schema_list/+:  
-`  - schema: sbxh_smart     `  
-`  - schema: sbxh_stroke    `  
-`  - schema: pinyin         `  
+default.custom.yaml或sharedsupport/default.yaml`  
+schema_list/+:                                                   
+  - schema: sbxh_smart                                           
+  - schema: sbxh_stroke                                          
+  - schema: pinyin                                               
 #后面两个属于依赖方案，可以注释  
 方案选择：sbxh_smart  
 
@@ -56,8 +56,8 @@ data：（自己可以查看输入编码或修改）
       自定义短语（custom_phrase.txt）的编码，需要首字母大写避免顶功规则。 
 
 全顶功声笔，改动说明（详细查看README.md）：  
-笔画键位声韵母变动`：  
-    zh     --→      f      
+笔画键位声韵母变动：  
+`    zh     --→      f    `  
 `    sh     --→      j    `  
 `    ch     --→      k    `  
 `    a      --→      z    `  
