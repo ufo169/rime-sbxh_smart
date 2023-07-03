@@ -21,8 +21,8 @@ rime.lua添加
 >date_translator = require("date")  
   
 default.custom.yaml或sharedsupport/default.yaml  
-`
-schema_list/+:  
+
+`schema_list/+:  
   - schema: sbxh_smart    
   - schema: sbxh_stroke    
   - schema: pinyin         #依赖部署不了字典，可以添加方案部署后，再注释掉  
