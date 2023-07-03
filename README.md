@@ -22,9 +22,9 @@ rime.lua添加
   
 default.custom.yaml或sharedsupport/default.yaml  
 schema_list/+:  
->- schema: sbxh_smart  
->- schema: sbxh_stroke  
->- schema: pinyin   #依赖部署不了字典，可以添加方案部署后，再注释掉  
+`  - schema: sbxh_smart  `  
+`  - schema: sbxh_stroke  `  
+`  - schema: pinyin  `       #依赖部署不了字典，可以添加方案部署后，再注释掉  
 方案选择：sbxh_smart  
 
 输入规则：  
