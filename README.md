@@ -21,29 +21,30 @@ rime.lua添加
 >date_translator = require("date")  
   
 default.custom.yaml或sharedsupport/default.yaml  
-
-`schema_list/+:  
-  - schema: sbxh_smart    
-  - schema: sbxh_stroke    
-  - schema: pinyin         #依赖部署不了字典，可以添加方案部署后，再注释掉  
+schema_list/+:  
+`  - schema: sbxh_smart     `  
+`  - schema: sbxh_stroke    `  
+`  - schema: pinyin         `  
+#后面两个属于依赖方案，可以注释  
 方案选择：sbxh_smart  
 
 输入规则：  
-①2字输入：s1y1s2y2b1b2  
-②3字输入：s1s2s3b1b2  
-③3字以上输入：s1s2s3s(end)b1b2  
+>①2字输入：s1y1s2y2b1b2  
+>②3字输入：s1s2s3b1b2  
+>③3字以上输入：s1s2s3s(end)b1b2  
 可以，「无码加词」，即纯词组，会置后；编码相同时，权重大的置前  
 *bn相当于第n个字的首笔*  
 
 data：（自己可以查看输入编码或修改）  
-日期：orq  
-时间：osj  
-星期：oxq  
-季节：ojj  
+>日期：orq  
+>时间：osj  
+>星期：oxq  
+>季节：ojj  
 
+符号引导功能：  
 ` 引导拼音反查  
 i 引导重复上屏  
-；引导快符输入  
+; 引导快符输入  
 / 引导表情符号（输入编码可以查看mysymbols.yaml）  
 o 引导符号输入（输入编码可以查看o_symbols.dict.yaml）  
 ' 引导手动造词  
@@ -78,9 +79,9 @@ o 引导符号输入（输入编码可以查看o_symbols.dict.yaml）
 `    土      --→     u    `  
 
 *特别说明，需要恢复传统声笔，主方案sbxh_smart打开顶功规则，还需要替换以下三个原来未改动的词典  
->- sbjm  
->- sbxh_stroke  
->- sbxh_cz  
+`    - sbjm               `  
+`    - sbxh_stroke        `  
+`    - sbxh_cz            `  
 special: "^([a-z][aeuio][bpmfdtnlgkhjqxzhrzcsywv])"  
 *简单的可以拿dict文件夹里的文件替换*  
 
