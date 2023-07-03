@@ -18,37 +18,37 @@
 　英文造词功能等  	  
     
 rime.lua添加  
-　　topup_processor = require("jd27_topup")  
-　　date_translator = require("date")  
+　topup_processor = require("jd27_topup")  
+　date_translator = require("date")  
   
 default.custom.yaml或sharedsupport/default.yaml  
 schema_list/+:  
-　　- schema: sbxh_smart     
-　　- schema: sbxh_stroke    
-　　- schema: pinyin         
+　- schema: sbxh_smart     
+　- schema: sbxh_stroke    
+　- schema: pinyin         
 #后面两个属于依赖方案，可以注释  
 方案选择：sbxh_smart  
 
 输入规则：  
-　　①2字输入：s1y1s2y2b1b2  
-　　②3字输入：s1s2s3b1b2  
-　　③3字以上输入：s1s2s3s(end)b1b2  
+　　① 2字输入：s1y1s2y2b1b2  
+　　② 3字输入：s1s2s3b1b2  
+　　③ 3字以上输入：s1s2s3s(end)b1b2  
 可以，「无码加词」，即纯词组，会置后；编码相同时，权重大的置前  
 *bn相当于第n个字的首笔*  
 
 data：（自己可以查看输入编码或修改）  
-　　日期：orq  
-　　时间：osj  
-　　星期：oxq  
-　　季节：ojj  
+　日期：orq  
+　时间：osj  
+　星期：oxq  
+　季节：ojj  
 
 符号引导功能：  
-　　`　引导拼音反查  
-　　i　引导重复上屏  
-　　;　引导快符输入  
-　　/　引导表情符号（输入编码可以查看mysymbols.yaml）  
-　　o　引导符号输入（输入编码可以查看o_symbols.dict.yaml）  
-　　'　引导手动造词  
+　`　引导拼音反查  
+　i　引导重复上屏  
+　;　引导快符输入  
+　/　引导表情符号（输入编码可以查看mysymbols.yaml）  
+　o　引导符号输入（输入编码可以查看o_symbols.dict.yaml）  
+　'　引导手动造词  
 如：'mooe'lia'nn	魔力鸟，空格上屏后，词组便可以按照规则打  
 *注意中间的分隔符‘可以不要（'mooeliann）  
 
@@ -57,27 +57,27 @@ data：（自己可以查看输入编码或修改）
 
 全顶功声笔，改动说明（详细查看README.md）：  
 笔画键位声韵母变动：  
-　　　zh　　　--→　　　f   
-　　　sh　　　--→　　　j   
-　　　ch　　　--→　　　k   
-　　　a 　　　--→　　　z   
-　　　e 　　　--→　　　d   
-　　　u 　　　--→　　　j   
-　　　i 　　　--→　　　k   
-　　　o 　　　--→　　　l   
-　　　uo　　　--→　　　l   
+`　　　zh　　　--→　　　f　　　　`  
+`　　　sh　　　--→　　　j　　　　`  
+`　　　ch　　　--→　　　k　　　　`  
+`　　　a 　　　--→　　　z　　　　`  
+`　　　e 　　　--→　　　d　　　　`  
+`　　　u 　　　--→　　　j　　　　`  
+`　　　i 　　　--→　　　k　　　　`  
+`　　　o 　　　--→　　　l　　　　`  
+`　　　uo　　　--→　　　l　　　　`  
 
 字根：每个字的首笔是字根的，就用对应的字母代替这字根的笔顺（简单韵母音记忆，氵是 a）  
-　　　水(氵)　　--→　　　　a  
-　　　草(艹)　　--→　　　　a  
-　　　人(亻)　　--→　　　　e  
-　　　月 　　　　--→　　　　e  
-　　　日 　　　　--→　　　　i  
-　　　金(钅)　　--→　　　　i  
-　　　手(扌)　　--→　　　　o  
-　　　口 　　　　--→　　　　o  
-　　　木　 　　　--→　　　　u  
-　　　土　 　　　--→　　　　u  
+`　　　水(氵)　　--→　　　　a　　　`　  
+`　　　草(艹)　　--→　　　　a　　　`　  
+`　　　人(亻)　　--→　　　　e　　　`　  
+`　　　月 　　　　--→　　　　e　　　`　  
+`　　　日 　　　　--→　　　　i　　　`　  
+`　　　金(钅)　　--→　　　　i　　　`　  
+`　　　手(扌)　　--→　　　　o　　　`　  
+`　　　口 　　　　--→　　　　o　　　`　  
+`　　　木　 　　　--→　　　　u　　　`　  
+`　　　土　 　　　--→　　　　u　　　`　  
 
 *特别说明，需要恢复传统声笔，主方案sbxh_smart打开顶功规则，还需要替换以下三个原来未改动的词典  
 　　- sbjm          
