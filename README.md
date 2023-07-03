@@ -27,7 +27,7 @@ schema_list/+:
   - schema: sbxh_stroke    
   - schema: pinyin         #依赖部署不了字典，可以添加方案部署后，再注释掉  
 方案选择：sbxh_smart  
-`
+
 输入规则：  
 ①2字输入：s1y1s2y2b1b2  
 ②3字输入：s1s2s3b1b2  
